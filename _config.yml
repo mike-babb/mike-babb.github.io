@@ -1,6 +1,9 @@
+name: Hank Quinlan, Horrible Cop
+markdown: kramdown
+
 #domain: mike-babb.github.io
 #url: https://mike-babb.github.io 
 #baseurl: /REPOSITORY-NAME/
-theme: jekyll-theme-hacker
+#theme: jekyll-theme-hacker
 title: mike babb\'s about me
 description: thoughts and projects
