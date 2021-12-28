@@ -10,7 +10,7 @@ layout: feed
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>http://mike-babb.github.io/blog</id>
 	<author>
-		<name>Hank Quinlan</name>
+		<name>Mike Babb</name>
 		<email>babbm@uw.edu</email>
 	</author>
 
