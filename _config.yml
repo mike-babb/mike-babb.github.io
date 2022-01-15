@@ -1,6 +1,7 @@
 name: Mike Babb, PhD
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+style: kjhealy
 #domain: mike-babb.github.io
 #url: https://mike-babb.github.io 
 #baseurl: /REPOSITORY-NAME/

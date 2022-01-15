@@ -1,0 +1,76 @@
+I"�<h1 id="michael-babb-phd">Michael Babb, PhD</h1>
+<p>data scientist | computational geographer</p>
+
+<div id="webaddress">
+<a href="babbm@uw.edu">babbm@uw.edu</a>
+| <a href="https://mike-babb.github.io/">github.io</a>
+</div>
+
+<h2 id="currently">Currently</h2>
+
+<p>I am interested in the spatio-demographic variation in population processes such as migration, mortality, segregation, and political representation. I have over 15 years of experience in working with GIS, large databases, and the statistical modeling and visualization of data. Previously, I worked worked for the United States Census Bureau and several Seattle-based companies such as Zillow, Community Attributes, and Integral GIS. Most recently, at the University of Washington, I was a consulating data scientist with the Center for Social Science Computation and Research, a cartography and spatial analysis instructor with the Department of Geography, and a research scientist with the e-Science Institute and the Center for Studies in Demography and Ecology.</p>
+
+<h3 id="specialized-in">Specialized in</h3>
+
+<p>Data science, spatial analysis, cartography and geovisualization, GIS, and population science.</p>
+
+<h2 id="education">Education</h2>
+
+<p><code class="language-plaintext highlighter-rouge">2021</code> PhD, Geography, University of Washington</p>
+<p style="font-family: Comic Sans MS; font-size:12pt">
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="diss">Dissertation: Dimensions of Interstate and Interstate Migration, 1990 - 2015</a>
+</p>
+<p><code class="language-plaintext highlighter-rouge">2009</code> MA, Geography, University of Washington<br />
+<code class="language-plaintext highlighter-rouge">2005</code> BA, Geography, University of Washington</p>
+
+<h2 id="publications">Publications</h2>
+
+<p>Chi, D.L., Lenaker, D., Mancl, L., Dunbar, M., <strong>Babb, M.</strong>, 2018. Dental therapists linked to improved dental outcomes for Alaska Native communities in the Yukon-Kuskokwim Delta. Journal of Public Health Dentistry. <a href="https://doi.org/10.1111/jphd.12263">https://doi.org/10.1111/jphd.12263</a></p>
+
+<p>Fussell, E., Curran, S.R., Dunbar, M.D., <strong>Babb, M.A.</strong>, Thompson, L., Meijer-Irons, J., 2016. Weather-Related Hazards and Population Change: A Study of Hurricanes and Tropical Storms in the United States, 1980–2012. The ANNALS of the American Academy of Political and Social Science 669, 146–167. <a href="https://doi.org/10.1177/0002716216682942">https://doi.org/10.1177/0002716216682942</a></p>
+
+<h3 id="patents">Patents</h3>
+<p><code class="language-plaintext highlighter-rouge">2021</code>
+Estimating the value of a property in a manner sensitive to nearby value-affecting geographic features <a href="http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=10984489">10984489</a>.</p>
+
+<h2 id="occupation">Occupation</h2>
+
+<p><code class="language-plaintext highlighter-rouge">January 2016 - Present</code><br />
+<em>Data Scientist</em><br />
+University of Washington</p>
+<ul>
+  <li>Design and implementation, in python and R, of data engineering pipelines using linear optimization and regression modelling resulting in a 30-percent increase in the study population (136M to 178M) and an 8-fold increase in complete cases.</li>
+  <li>Deployment of 155K generalized linear models in a parallelized R computing environment.</li>
+  <li>Design and implementation in R of parallelized data visualization pipelines.
+Data engineering, regression modelling, and visualization of historical and contemporary using python, R, and SQLite.</li>
+  <li>Consultation and instruction in feature engineering, data analysis, geospatial analysis, statistical analysis, data visualization, and cartographic visualization using python, R, and ArcGIS.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">August 2013 – January 2016</code><br />
+<em>GIS Analyst</em><br />
+Zillow.com</p>
+<ul>
+  <li>Authorship of geospatial feature engineering and machine learning algorithms in python, R and MS SQL Server.</li>
+  <li>Feature engineering and statistical analyses in support of live-site operations and maintenance using MS SQL Server and python.</li>
+  <li>Data-driven analysis of the technical feasibility and business-need suitability of dataset acquisition and incorporation into production, at-scale, machine learning pipelines.</li>
+  <li>Authorship of new geospatial feature engineering algorithms in R and python that led to a 10-fold increase over then-existing algorithm efficiency and coverage.</li>
+  <li>Data-driven business-needs assessment of the strengths and efficiencies of existing geospatial feature engineering algorithms.
+Used R to perform diagnostics of model output leading to the identification of biases in production machine learning models.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">April 2012 – October 2014</code><br />
+<em>Geographer</em><br />
+U.S. Bureau of Census</p>
+<ul>
+  <li>Coordinated federal-academic project proposal development, project management, and researcher access to confidential federal statistical data.</li>
+  <li>Site operation and administration of a Federal Statistical Research Data Center.</li>
+  <li>Completed build out and received certification to operate a federally compliant Federal Statistical Research Data Center (1 of 16 at the time of opening).</li>
+</ul>
+
+<h6 id="please-click-here-for-my-full-cv">Please click <a href="full_cv">here</a> for my full CV.</h6>
+<h5 id="last-updated-january-2022">Last updated January 2022</h5>
+
+<!-- ### Footer
+Last updated: January 2022 -->
+
+:ET
