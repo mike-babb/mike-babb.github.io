@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Michael Babb's CV
+title: Babb - CV
 ---
 
 # Michael Babb, PhD
@@ -12,18 +12,14 @@ data scientist | computational geographer
 </div>
 
 
-## Currently
-
-I am interested in the spatio-demographic variation in population processes such as migration, mortality, segregation, and political representation. I have over 15 years of experience in working with GIS, large databases, and the statistical modeling and visualization of data. Previously, I worked worked for the United States Census Bureau and several Seattle-based companies such as Zillow, Community Attributes, and Integral GIS. Most recently, at the University of Washington, I was a consulating data scientist with the Center for Social Science Computation and Research, a cartography and spatial analysis instructor with the Department of Geography, and a research scientist with the e-Science Institute and the Center for Studies in Demography and Ecology. 
-
-### Specialized in
+## Specialization
 
 Data science, spatial analysis, cartography and geovisualization, GIS, and population science.
 
 ## Education
 
 `2021` PhD, Geography, University of Washington
-<p style = "font-family: Comic Sans MS; font-size:12pt">
+<p style = "font-family: 'Ubuntu', sans-serif; font-size:12pt">
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="diss">Dissertation: Dimensions of Interstate and Interstate Migration, 1990 - 2015</a>
 </p>
 `2009` MA, Geography, University of Washington\
@@ -37,7 +33,7 @@ Fussell, E., Curran, S.R., Dunbar, M.D., __Babb, M.A.__, Thompson, L., Meijer-Ir
 
 ### Patents
 `2021`
-Estimating the value of a property in a manner sensitive to nearby value-affecting geographic features [10984489](http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=10984489).
+Estimating the value of a property in a manner sensitive to nearby value-affecting geographic features. Patent number: [10984489](http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=10984489).
 
 ## Occupation
 
@@ -67,7 +63,10 @@ U.S. Bureau of Census
 - Site operation and administration of a Federal Statistical Research Data Center.
 - Completed build out and received certification to operate a federally compliant Federal Statistical Research Data Center (1 of 16 at the time of opening).
 
+<!-->
+uncomment when I write my full CV. still needs work. 
 ###### Please click [here](full_cv) for my full CV.
+-->
 ##### Last updated January 2022
 
 <!-- ### Footer
