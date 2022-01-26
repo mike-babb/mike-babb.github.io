@@ -1,4 +1,4 @@
-I"Æ<h1 id="michael-babb-phd">Michael Babb, PhD</h1>
+I"Ð<h1 id="michael-babb-phd">Michael Babb, PhD</h1>
 <p>data scientist | computational geographer</p>
 
 <div id="webaddress">
@@ -37,9 +37,16 @@ University of Washington</p>
 <ul>
   <li>Design and implementation, in python and R, of data engineering pipelines using linear optimization and regression modelling resulting in a 30-percent increase in the study population (136M to 178M) and an 8-fold increase in complete cases.</li>
   <li>Deployment of 155K generalized linear models in a parallelized R computing environment.</li>
+  <li>Design and implementation in R of parallelized data visualization pipelines.</li>
+  <li>Data engineering, regression modelling, and visualization of historical and contemporary using python, R, and SQLite.</li>
+  <li>
+    <p>Consultation and instruction in feature engineering, data analysis, geospatial analysis, statistical analysis, data visualization, and cartographic visualization using python, R, and ArcGIS.</p>
+  </li>
+  <li>Design and implementation, in python and R, of data engineering pipelines using linear optimization and regression modelling resulting in a 30-percent increase in the study  population (136M to 178M) and an 8-fold increase in complete cases.</li>
+  <li>Deployment of 155K generalized linear models in a parallelized R computing environment.</li>
   <li>Design and implementation in R of parallelized data visualization pipelines.
-Data engineering, regression modelling, and visualization of historical and contemporary using python, R, and SQLite.</li>
-  <li>Consultation and instruction in feature engineering, data analysis, geospatial analysis, statistical analysis, data visualization, and cartographic visualization using python, R, and ArcGIS.</li>
+Data engineering, regression modelling, and visualization of historical and contemporary data using python, R, and SQLite.
+Consultation and instruction in feature engineering, data analysis, geospatial analysis, statistical analysis, data visualization, and cartographic visualization using python, R, and ArcGIS.</li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">August 2013 â€“ January 2016</code><br />
@@ -63,9 +70,8 @@ U.S. Bureau of Census</p>
   <li>Completed build out and received certification to operate a federally compliant Federal Statistical Research Data Center (1 of 16 at the time of opening).</li>
 </ul>
 
-<!-->
-uncomment when I write my full CV. still needs work. 
-###### Please click [here](full_cv) for my full CV.
+<!--
+uncomment when I write my full CV. still needs work. ###### Please click [here](full_cv) for my full CV.
 -->
 <h5 id="last-updated-january-2022">Last updated January 2022</h5>
 

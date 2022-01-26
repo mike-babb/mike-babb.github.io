@@ -1,4 +1,4 @@
-I"é<h1 id="michael-babb-phd">Michael Babb, PhD</h1>
+I"¦<h1 id="michael-babb-phd">Michael Babb, PhD</h1>
 <p>data scientist | computational geographer</p>
 
 <div id="webaddress">
@@ -6,9 +6,7 @@
 | <a href="https://mike-babb.github.io/">github.io</a>
 </div>
 
-<h2 id="currently">Currently</h2>
-
-<h3 id="specialized-in">Specialized in</h3>
+<h2 id="specialization">Specialization</h2>
 
 <p>Data science, spatial analysis, cartography and geovisualization, GIS, and population science.</p>
 
@@ -37,10 +35,10 @@ Estimating the value of a property in a manner sensitive to nearby value-affecti
 <em>Data Scientist</em><br />
 University of Washington</p>
 <ul>
-  <li>Design and implementation, in python and R, of data engineering pipelines using linear optimization and regression modelling resulting in a 30-percent increase in the study population (136M to 178M) and an 8-fold increase in complete cases.</li>
+  <li>Design and implementation, in python and R, of data engineering pipelines using linear optimization and regression modelling resulting in a 30-percent increase in the study  population (136M to 178M) and an 8-fold increase in complete cases.</li>
   <li>Deployment of 155K generalized linear models in a parallelized R computing environment.</li>
-  <li>Design and implementation in R of parallelized data visualization pipelines.
-Data engineering, regression modelling, and visualization of historical and contemporary using python, R, and SQLite.</li>
+  <li>Design and implementation in R of parallelized data visualization pipelines.</li>
+  <li>Data engineering, regression modelling, and visualization of historical and contemporary data using python, R, and SQLite.</li>
   <li>Consultation and instruction in feature engineering, data analysis, geospatial analysis, statistical analysis, data visualization, and cartographic visualization using python, R, and ArcGIS.</li>
 </ul>
 
@@ -52,8 +50,8 @@ Zillow.com</p>
   <li>Feature engineering and statistical analyses in support of live-site operations and maintenance using MS SQL Server and python.</li>
   <li>Data-driven analysis of the technical feasibility and business-need suitability of dataset acquisition and incorporation into production, at-scale, machine learning pipelines.</li>
   <li>Authorship of new geospatial feature engineering algorithms in R and python that led to a 10-fold increase over then-existing algorithm efficiency and coverage.</li>
-  <li>Data-driven business-needs assessment of the strengths and efficiencies of existing geospatial feature engineering algorithms.
-Used R to perform diagnostics of model output leading to the identification of biases in production machine learning models.</li>
+  <li>Data-driven business-needs assessment of the strengths and efficiencies of existing geospatial feature engineering algorithms.</li>
+  <li>Bias identification using R in production machine learning models.</li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">April 2012 â€“ October 2014</code><br />
@@ -65,9 +63,8 @@ U.S. Bureau of Census</p>
   <li>Completed build out and received certification to operate a federally compliant Federal Statistical Research Data Center (1 of 16 at the time of opening).</li>
 </ul>
 
-<!-->
-uncomment when I write my full CV. still needs work. 
-###### Please click [here](full_cv) for my full CV.
+<!--
+uncomment when I write my full CV. still needs work. ###### Please click [here](full_cv) for my full CV.
 -->
 <h5 id="last-updated-january-2022">Last updated January 2022</h5>
 

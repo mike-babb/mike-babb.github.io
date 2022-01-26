@@ -37,14 +37,15 @@ Estimating the value of a property in a manner sensitive to nearby value-affecti
 
 ## Occupation
 
-`January 2016 - Present`\
+`January 2016 - December 2021`\
 _Data Scientist_\
 University of Washington
-- Design and implementation, in python and R, of data engineering pipelines using linear optimization and regression modelling resulting in a 30-percent increase in the study population (136M to 178M) and an 8-fold increase in complete cases.
+- Design and implementation, in python and R, of data engineering pipelines using linear optimization and regression modelling resulting in a 30-percent increase in the study  population (136M to 178M) and an 8-fold increase in complete cases.
 - Deployment of 155K generalized linear models in a parallelized R computing environment.
 - Design and implementation in R of parallelized data visualization pipelines.
-Data engineering, regression modelling, and visualization of historical and contemporary using python, R, and SQLite.
+- Data engineering, regression modelling, and visualization of historical and contemporary data using python, R, and SQLite.
 - Consultation and instruction in feature engineering, data analysis, geospatial analysis, statistical analysis, data visualization, and cartographic visualization using python, R, and ArcGIS.
+
 
 `August 2013 – January 2016`\
 _GIS Analyst_\
@@ -54,7 +55,7 @@ Zillow.com
 - Data-driven analysis of the technical feasibility and business-need suitability of dataset acquisition and incorporation into production, at-scale, machine learning pipelines.
 - Authorship of new geospatial feature engineering algorithms in R and python that led to a 10-fold increase over then-existing algorithm efficiency and coverage.
 - Data-driven business-needs assessment of the strengths and efficiencies of existing geospatial feature engineering algorithms.
-Used R to perform diagnostics of model output leading to the identification of biases in production machine learning models.
+- Bias identification using R in production machine learning models.
 
 `April 2012 – October 2014`\
 _Geographer_\
@@ -63,9 +64,8 @@ U.S. Bureau of Census
 - Site operation and administration of a Federal Statistical Research Data Center.
 - Completed build out and received certification to operate a federally compliant Federal Statistical Research Data Center (1 of 16 at the time of opening).
 
-<!-->
-uncomment when I write my full CV. still needs work. 
-###### Please click [here](full_cv) for my full CV.
+<!--
+uncomment when I write my full CV. still needs work. ###### Please click [here](full_cv) for my full CV.
 -->
 ##### Last updated January 2022
 
