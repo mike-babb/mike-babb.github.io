@@ -1,0 +1,138 @@
+I"�Q<h1 id="programming-for-the-interwebs">Programming for the interwebs!</h1>
+
+<p>I am learning a lot.</p>
+
+<p>After I launched this blog in January, I set out to publish some advice on how I finished grad school. I just published my, what turned out to be a five part series on how I finished grad school. Just typing<br />
+that out loud makes me laugh.</p>
+
+<p>Clearly, it took a while to type that up. But! That’s not why I’m writing this post. I’m writing this post because I wanted to add a “last update field” to my posts. So many things are iterative! And I want to put stuff out sooner rather than later. And I realize that one of the things preventing that is an update date. I’ll start a post, but it won’t be complete until a few days later. I don’t want to keep updating the date field in the markdown’s header. Of course, there is a plugin for that. Yay for jekyll! It took me a while to understand how to configure the pluging and in the process I learned a little bit more about jekyll.</p>
+
+<p>The plugin is called <a href="https://github.com/gjtorikian/jekyll-last-modified-at">jekyll-last-modified-at</a>. And this <a href="https://tomkadwill.com/adding-last-modified-date-to-jekyll">page</a> features a little more information on how to implement the plugin. Both pages feature instructions and once I understood a little bit more about how to build a webpage using jekyll, the instructions make a lot of sense. I’m approaching web development as a complete novice. So, here is what I did:</p>
+
+<h2 id="install-the-pluggin">Install the pluggin</h2>
+<p>Follow the instructions at <a href="https://github.com/gjtorikian/jekyll-last-modified-at">https://github.com/gjtorikian/jekyll-last-modified-at</a>.</p>
+
+<h2 id="update-the-posthtml-template">Update the post.html template</h2>
+<p>I used the code from this <a href="https://tomkadwill.com/adding-last-modified-date-to-jekyll">page</a> to modofiy the post.html template. Here is what my post.html template now looks like:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+---
+<span class="nt">&lt;h1&gt;</span>Blog Updates, 2022/02/07<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"meta"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"dt-published"</span> <span class="na">datetime=</span><span class="s">"2022-02-07T00:00:00-08:00"</span> <span class="na">itemprop=</span><span class="s">"datePublished"</span><span class="nt">&gt;</span>Last updated: Feb 7, 2022<span class="nt">&lt;/time&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>How I Finished - part 4<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"meta"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"dt-published"</span> <span class="na">datetime=</span><span class="s">"2022-02-01T00:00:00-08:00"</span> <span class="na">itemprop=</span><span class="s">"datePublished"</span><span class="nt">&gt;</span>Last updated: Feb 7, 2022<span class="nt">&lt;/time&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"on-technology"</span><span class="nt">&gt;</span>On technology<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>Through an iterative and experimental process, I settled on a set of software and technology practices that helped me finish. Technolocy and software that got out of my way and helped me create helped me the most and in this post I describe the ways I made that happen.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"use-software-that-helps"</span><span class="nt">&gt;</span>Use software that helps<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"pick-software-and-create-a-digital-eco-system-that-helps-you-work"</span><span class="nt">&gt;&lt;em&gt;</span>Pick software and create a digital eco-system that helps you work.<span class="nt">&lt;/em&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;p&gt;</span>Was any one piece of software that I used particularly outstanding? Not really. But they all helped. For example, I used Microsoft OneNote for my dissertation journal because I can access it from my computer, iPhone, iPad, and from a browser. This helped make my dissertation journal more available and ready if I needed to get a bunch of anxious or scattered thoughts out of my head. That being said, I also bought a nice notebook and a <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://uni-pens.com/product/jetstream-4and1/"</span><span class="nt">&gt;</span>4-color pen<span class="nt">&lt;/a&gt;</span>. Somedays I wrote my dissertation journal out by hand and multi-colored doodles.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>While software can help, beware of the “new-tool” or the “perfect-tool” trap. There will always be a new tool. It might be better. It might be worse. But all tools are equally worthless if they are not used. Pick one. If you don’t like it, chances are you can port your work to a new tool. But, you have to pick one and keep going. I’ve definitely lost a lot of time investing in some new software because I thought it would solve all of my problems. Certainly, my dissertation journal helped me solved a lot of my problems. But that was a technique and an action - not OneNote specifically. I could have written my journal in MS Excel, or MS Word, or MS Access, or in a plain text editor. It was the action that help me finish.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>There is a great deal of revision in a dissertation, including how you work. Iterate! Keep what helps you work and jettison what doesn’t.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>The technology and the interfaces I used for my dissertation:<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Programming, analysis, and data storage
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://cran.r-project.org/"</span><span class="nt">&gt;</span>R<span class="nt">&lt;/a&gt;</span> and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.rstudio.com/"</span><span class="nt">&gt;</span>RStudio<span class="nt">&lt;/a&gt;</span>: statistical programming and visualization.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.python.org/"</span><span class="nt">&gt;</span>Python<span class="nt">&lt;/a&gt;</span>: general programming and data processing.
+        <span class="nt">&lt;ul&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.jetbrains.com/pycharm/"</span><span class="nt">&gt;</span>pycharm<span class="nt">&lt;/a&gt;</span> –<span class="ni">&amp;gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.sublimetext.com/"</span><span class="nt">&gt;</span>sublime text<span class="nt">&lt;/a&gt;</span> –<span class="ni">&amp;gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.anaconda.com/"</span><span class="nt">&gt;</span>jupyter notebook<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.sqlite.org/index.html"</span><span class="nt">&gt;</span>SQLite<span class="nt">&lt;/a&gt;</span> and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://sqlitestudio.pl/"</span><span class="nt">&gt;</span>SQLiteStudio<span class="nt">&lt;/a&gt;</span>: powerful open-source database platform and database management interface.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.microsoft.com/en-us/microsoft-365/excel"</span><span class="nt">&gt;</span>MS Excel<span class="nt">&lt;/a&gt;</span>: spreadsheets.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Writing, communciation, and information management
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.microsoft.com/en-us/microsoft-365/word"</span><span class="nt">&gt;</span>MS Word<span class="nt">&lt;/a&gt;</span>: Word processing.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.microsoft.com/en-us/microsoft-365/powerpoint"</span><span class="nt">&gt;</span>MS Powerpoint<span class="nt">&lt;/a&gt;</span>: Presentation software.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app/"</span><span class="nt">&gt;</span>OneNote<span class="nt">&lt;/a&gt;</span>: Note taking software.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.latex-project.org/"</span><span class="nt">&gt;</span>LaTex<span class="nt">&lt;/a&gt;</span> through <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.overleaf.com/project"</span><span class="nt">&gt;</span>overleaf<span class="nt">&lt;/a&gt;</span>: Document prepartion and type seting.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.zotero.org/"</span><span class="nt">&gt;</span>Zotero<span class="nt">&lt;/a&gt;</span>: Citation and reference management.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://apps.apple.com/app/papership/id631980748"</span><span class="nt">&gt;</span>Papership<span class="nt">&lt;/a&gt;</span>: iOS app for reading pdfs.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Text editing, file replication, and utilities
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://notepad-plus-plus.org/downloads/"</span><span class="nt">&gt;</span>Notepad ++<span class="nt">&lt;/a&gt;</span>: Text editor.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://code.visualstudio.com/"</span><span class="nt">&gt;</span>VS Code<span class="nt">&lt;/a&gt;</span>: Text editor.
+        <span class="nt">&lt;ul&gt;</span>
+          <span class="nt">&lt;li&gt;</span>With VS Code I can edit and write python, R, sql, LaTex, and general notes. Integrates with git. VS Code is <span class="nt">&lt;em&gt;</span>VERY<span class="nt">&lt;/em&gt;</span> useful.<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/SyncToy"</span><span class="nt">&gt;</span>synctoy<span class="nt">&lt;/a&gt;</span>: File synchronization.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy"</span><span class="nt">&gt;</span>robocopy<span class="nt">&lt;/a&gt;</span>: Command-line utility for file replication.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://github.com/"</span><span class="nt">&gt;</span>Git<span class="nt">&lt;/a&gt;</span>: Software and manuscript versioning.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"make-starting-each-day-a-little-easier"</span><span class="nt">&gt;</span>Make starting each day a little easier<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"have-your-computer-open-up-your-key-programs-right-at-boot-up"</span><span class="nt">&gt;&lt;em&gt;</span>Have your computer open up your key programs right at boot up.<span class="nt">&lt;/em&gt;&lt;/h3&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>I have the following programs load when I turn on my computer:<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>MS Word - so I can write my dissertation.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>MS Outlook - so I can respond to anything time sensitive, but I would close it shortly after.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Firefox - so I can gather citations or launch a jupyter notebook.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Zotero - so I can manage references and insert citations into my manuscript.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>RStudio - for analysis and visualization.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>These five programs were key components to the work involved in my dissertation. (I would have made OneNote open at startup, but it works a little differently than other MS Office products.) Yes, in reality, I saved only five mouse clicks, but it was one less hurdle. Especially so with MS Word. It’s already open, let’s write a little in my dissertation, yeah?<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"use-git"</span><span class="nt">&gt;</span>Use git<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"version-your-code-version-your-manuscript"</span><span class="nt">&gt;&lt;em&gt;</span>Version your code, version your manuscript.<span class="nt">&lt;/em&gt;&lt;/h3&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>I use git for both my dissertation code and my dissertation manuscript. I love checking in code. And major versions of chapters. I pay $4 a month for private repositories. I have no doubt that student plans exist. But again, now is not the time to cheap out. (I cannot remember the last time I paid less than $4 for a latte.) Git also lets you build webpages. Like this one! And you can start building a portfolio. And you can reover your work. Git has certainly saved me a time or two.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"file-backup-and-redundancy"</span><span class="nt">&gt;</span>File backup and redundancy<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"set-up-a-backup-plan-for-your-code-and-your-manuscript"</span><span class="nt">&gt;&lt;em&gt;</span>Set up a backup plan for your code and your manuscript.<span class="nt">&lt;/em&gt;&lt;/h3&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Make sure at least some portion of your backup plan is automatic. I try to practice “disposable computing”. I’ve had my laptop since 2012. It’s been all over the US and on three continents. I’d be sad if I were to lose or irepreprably damage my laptop. Because of my backup plan, I’d be back up and running in a few hours and minus a thousand dollars. As a result, the laptop is disposable at any time.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>My backup plan involved two external hard drives, a server on my university’s campus (which is itself backed up nightly), Google Drive, Microsoft One Drive, Dropbox, and Git. In this backup schema, my most recent backup is never more than one hour old. This is out of convenience as I do not like working from Google Drive / Microsoft One Drive / Dropbox. I find those services to be too machine depenedent, stingy with storage space, and uppity if there isn’t an active internet connection. And if I’m working from one service, I can’t work from another. So, why pick any one cloud-based storage service when I can use all three as a backup?<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>TThe code for my dissertation and my dissertation manuscript is backed up to 7 different places. Yes, seven. Each at different sync periods. Some of the backup frequency is manual, and some is automated. When my computer is on, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://docs.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page"</span><span class="nt">&gt;</span>once an hour every hour<span class="nt">&lt;/a&gt;</span>, a simple <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://en.wikipedia.org/wiki/Batch_file"</span><span class="nt">&gt;</span>batch file<span class="nt">&lt;/a&gt;</span> is called that, using robocopy replicates my dissertation code and disertation manuscript to Google Drive, Microsoft One Drive, and Dropbox. I commit my code throughout the week and I commit my manuscript less frequently. Only my code and my manuscript is backed up every hour. It’s the smallest storage-size wise of this project but the most sensitive. The data might take a few hours to create, but I can’t create the data without the code.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>I have two solid-state hard drives in my laptop. The OS and programs are on one internal hard drive (C:) and my code/data/manuscripts are on a seperate internal hard drive in my laptop (H:). Under this implementation, the laptop is replacable and I can easily swap the H drive to another computer should my laptop fail.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>I have nearly a terabyte of data on my H: drive and that is manually replicated tio two external hard drives. While my dissertation code and manuscript is never more than an hour old, my data backups are older.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>I use synctoy to maintain parity between local and remote resources and I use robocopy for replicating data. (SyncToy is no longer supported by Microsoft so I will be looking for a replacement.) In a recent release of robocopy, multithreaded copying was introduced which has dramatically reduced copy times.<span class="nt">&lt;/p&gt;</span>
+
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"post-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"dt-published"</span> <span class="na">datetime=</span><span class="s">"2022-02-01T00:00:00-08:00"</span> <span class="na">itemprop=</span><span class="s">"datePublished"</span><span class="nt">&gt;</span>
+        Originally published on: Feb 1, 2022
+      <span class="nt">&lt;/time&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  
+<span class="nt">&lt;/div&gt;</span>
+
+
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"post-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;time</span> <span class="na">class=</span><span class="s">"dt-published"</span> <span class="na">datetime=</span><span class="s">"2022-02-07T00:00:00-08:00"</span> <span class="na">itemprop=</span><span class="s">"datePublished"</span><span class="nt">&gt;</span>
+        Originally published on: Feb 7, 2022
+      <span class="nt">&lt;/time&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+:ET
