@@ -8,3 +8,9 @@ style: kjhealy
 #theme: jekyll-theme-hacker
 #title: mike babb\'s about me
 #description: thoughts and projects
+plugins:
+  - jekyll-last-modified-at
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+    date-format: '%d-%b-%y'
