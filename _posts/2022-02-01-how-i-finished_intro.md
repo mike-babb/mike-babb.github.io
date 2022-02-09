@@ -9,7 +9,10 @@ My journey through graduate school was a long one. Filled with many ups and down
 
 I know every person's journey through graduate school is deeply personal and unique. Some of this advice might be helpful and some of it might be not. Take it with a teaspoon of salt or ignore it. If any of it is helpful, fantastic. If not, well, thank you for reading.
 
-There is nothing discipline or topic specific to the pieces of advice in these sections. I used quantitative methods and processed a great deal in my dissertion so some of the advice is geared to that. 
+There is nothing discipline or topic specific to the pieces of advice in these sections. I used quantitative methods and processed a great deal of data in my dissertion and so some of the advice is geared to that. 
+
+These pieces of advice are about what you can control. 
+
 
 My list originally featured about eight things I did that helped me finished. But like most projects, it got larger. As I wroted I realized there were more things I did to help me finish. The list grew to include more than 20 and I have organized those items into four categories and each category is a seperate post.
 

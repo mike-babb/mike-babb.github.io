@@ -22,6 +22,6 @@ Follow the instructions at [https://github.com/gjtorikian/jekyll-last-modified-a
 ## Update the post.html template
 I used the code from this [page](https://tomkadwill.com/adding-last-modified-date-to-jekyll) to modify the post.html template. I would showcase what my [post.html](https://github.com/mike-babb/mike-babb.github.io/blob/main/_layouts/post.html) template looks likes with a code block, but I can't seem to include the code as an example and not have the code render. (The markdown is rendering what is included in the code block so it's pulling in additional stuff from elsewhere in blog. I do not know why. Yet...) 
 
-So, I still have some things to learn. And in that regad I'll take a queue from my motivation for adding the last update date feature and publish anyway!
+So, I still have some things to learn. And in that regard I'll take a queue from my motivation for adding the last update date feature and publish anyway!
 
 
