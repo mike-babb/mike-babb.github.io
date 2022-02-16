@@ -25,15 +25,15 @@ The technology and the interfaces I used for my dissertation:
     - [MS Excel](https://www.microsoft.com/en-us/microsoft-365/excel): spreadsheets.
 - Writing, communciation, and information management
     - [MS Word](https://www.microsoft.com/en-us/microsoft-365/word): Word processing.
-    - [MS Powerpoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint): Presentation software.
-    - [OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app/): Note taking software.
+    - [MS Powerpoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint): Presentation.
+    - [OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app/): Note taking.
     - [LaTex](https://www.latex-project.org/) through [overleaf](https://www.overleaf.com/project): Document prepartion and type seting.
     - [Zotero](https://www.zotero.org/): Citation and reference management.
     - [Papership](https://apps.apple.com/app/papership/id631980748): iOS app for reading pdfs.
 - Text editing, file replication, and utilities
     - [Notepad ++](https://notepad-plus-plus.org/downloads/): Text editor. 
     - [VS Code](https://code.visualstudio.com/): Text editor.
-        - With VS Code I can edit and write python, R, sql, LaTex, and general notes. Integrates with git. VS Code is *VERY* useful.
+        - With VS Code I can edit and write python, R, sql, LaTex, and take plain text notes. Integrates with git. VS Code is *VERY* useful.
     - [synctoy](https://en.wikipedia.org/wiki/SyncToy): File synchronization.
     - [robocopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy): Command-line utility for file replication.
     - [Git](https://github.com/): Software and manuscript versioning.

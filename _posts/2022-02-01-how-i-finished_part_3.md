@@ -14,7 +14,9 @@ Through my dissertation process I learned a lot about how I wrote and what worke
 Alternatively, do not be precious about the text. Shunt what doesn't work into a document that you could come back to later. Just put text down. 
 My as-submitted dissertation clocks in at 51K words, excluding references. I have another document called "extra_text.docx" that features an additional 25K words. So, an additional half-dissertation. Thoughts and ideas that didn't make the cut. I do not lament that extra work. That extra work was necessary to sharpen my thoughts and help me articulate my ideas. 
 
-Somedays, I was stuck and I just start describing a graphic I made. Or I would articulate some aspect of my data. Or, if I felt brave, I would start a lit-review from memory and write a chronological overview of the methods and theoretical subject matter of my data. Some text is better than no text.
+Somedays, I was stuck and I just start describing a graphic I made. Or I would articulate some aspect of my data. Or, if I felt brave, I would start a lit-review from memory and write a chronological overview of the methods and theoretical subject matter of my topic. Some text is better than no text.
+
+I am putting this piece of advice in to practice with this blog. As I look over these posts, I will no doubt see errors and unclear sentences. And I will fix those. This medium allows for iteration and so I will take advantage of that by publishing and editing in real-time. 
 
 _Just. Write._
 

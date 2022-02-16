@@ -11,7 +11,12 @@ I work better in some spaces and places than others and that is influenced by th
 ## Favorite spaces and places
 ### _Where are you productive?_
 
-I really like working in cafes, libraries, and bars at night. The pandemic made that very difficult. I lost access to my favorite spaces and places during lockdown. Working from one desk at home proved difficult. So I improvised by putting in an additional small desk near a sunny window in my apartment. I grew to really like that small desk. I'd make a coffee and it felt a little like being at a cafe. Sometimes, I'd work at my kitchen table and sip a martini while I wrote late into the night.Those different spaces and places helped me be productive in their own way. Find yours.
+I really like working in cafes and libraries in the day and bars at night. The pandemic made that very difficult. I lost access to my favorite spaces and places during lockdown. Working from one desk at home proved difficult. So I improvised by putting in an additional small desk near a sunny window in my apartment. I grew to really like that small desk. I'd make a coffee and it felt a little like being at a cafe. Sometimes, I'd work at my kitchen table and sip a martini while I wrote late into the night. Those different spaces and places helped me be productive in their own way. Find yours.
+
+## Take a walk
+### _Get physical before getting mental!_
+
+I nearly always combined this tactic with going to my office on campus or my favorite cafe. I'd walk or ride my bike and then I'd get to work. Some mild physical activity helped me get going. Especially on a long walk, I'd think about what I would want to accomplish on that day. 
 
 ## Make your space(s) and place(s) pleasant
 ### _You're gonna spend a lot of time in them, try to enjoy it_
@@ -22,7 +27,7 @@ Is it dual monitors? A de-cluttered desk? A standing desk? Experiment and find o
 Sometimes, my anxious, unfocused energy means that I am working for many hours but I do not get anything done. Bursts of activity, dozens of answered emails and text messages, half-started and half-finished data processing functions and paragraphs. But I didn't do anything that pushed the important stuff forward. This used to frustrate me a great deal. At some point in time over the last few years, I leaned into it. I learned that after exhausting that anxious, unfocused energy I was remarkably clear headed and I would have laser-like focus. The evening lift, as I call it, would usually occur around 8 pm. The work that I would get done between the hours of 8 pm and 12 am was truly inspired. Sometimes I was having such a good time with that focus and my work that I would step out to a local cafe with a quiet atmosphere and treat myself to a boilermaker. Drink some beer, drink some whiskey, and put down reams of code or paragraphs of text.
 
 ## Pomodoro
-### _Short periods of work, short breaks_ 
+### _Short periods of work, short breaks._ 
 [The Pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 
 Small bursts of work, small breaks. It adds up!
@@ -46,7 +51,18 @@ Sometimes when I was stuck or feeling uninspired I would make a map or other dat
 Sometimes I've found that working backwards can help me think about a section of a chapter. If I am at a loss for words, I'll start thinking about the visualizations, try out a few, and from there I'll start building a narrative around those visualizations. And from that narrative I can then refine other sections of the chapter.
 
 ## Have a side-project
-### _Procrastinate productively_
+### _Procrastinate productively._
 Don't want to think about your dissertation? Get a side project! I've been known to do ~~a little~~ a lot of procrasti-working. Try and make the side-project beneficial. Maybe it's work for a different chapter? Or a fun project that will help you skill up? Or a dataset you wanted to explore? Or an odd/unclear/fun concept you wanted to visualize?
 
 Get a side-project! I started working on an [anagram finder using python](https://github.com/mike-babb/finding_anagrams). It was a lot of fun to tinker with code in a no-stakes environment.
+
+## Project Management
+### _Wearing many hats._
+About half way through my dissertation I realized that I was doing the job of four people: project manager (PM), data engineer (DE), data analyst (DA), and communications specialist (CS). That's a lot. Some of these things I did better than othes. The one that I didn't know was the most important was the project manager position. I did not give that an ounce of thought. But I quickly realized that developing that skill helped me finish. I realized that PM Mike would have to coordinate the other Mikes in order to finish this. DE Mike and DA Mike, left to their own devices, will churn, create a lot of data, but won't get anything done. CS Mike had the most important role - interpreting and communicating the results to PM Mike and to my dissertation committee. PM Mike set the tempo, the research agenda, and could course correct when needed. One way I did that was borrowing pieces of an agile developmenmt framework. I set sprints and goals and I did daily standups. The daily scrum proved to be the most beneficial. Every day I would ask and answer the following questions:
+- What did I work on yesterday?
+- What am I working on today?
+- What's blocking me?
+
+Of course, this daily standup went into my dissertation journal. Some days the standup really got me going. On quite a few days the thing that was blocking me was not technical but project design or my mood in general. 
+
+I also grew quite fond of asking myself "what am I going to demo on Friday?" I would pretend that I was going to sit down with my coworkers on a Friday afternoon, around 3, and we would showcase the output of the week's work. Sometimes it was a function in R that automated a great deal of analyses, sometimes it was a map, sometimes it was a section of a chapter. But, I tried to think of chunks of work as demos. That was helpful, especially when I was stuck. This is related to my piece of advice in Part 3 on "Something is better than nothing."  A half-finished product is better than no product. 

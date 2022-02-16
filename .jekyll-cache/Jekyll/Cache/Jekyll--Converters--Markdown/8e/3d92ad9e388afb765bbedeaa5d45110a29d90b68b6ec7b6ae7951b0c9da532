@@ -1,0 +1,91 @@
+I"&-<h1 id="visualize-the-mandelbrot-set">Visualize the Mandelbrot Set</h1>
+
+<p>Sometime ago I read <a href="https://en.wikipedia.org/wiki/Chaos:_Making_a_New_Science">Chaos: Making a New Science</a> by James Gleick. Very cool book. And ever since then I’ve been interested in <a href="https://en.wikipedia.org/wiki/Fractal">fractals</a>. One of my favorite youtube channels, <a href="https://www.numberphile.com/">Numberphile</a>, has several videos on fractals and the Mandelbrot Set in particular:</p>
+<ul>
+  <li><a href="https://www.numberphile.com/videos/whats-special-about-the-mandelbrot-set?rq=mandelbrot">What’s special about the Mandelbrot Set?</a></li>
+  <li><a href="https://www.numberphile.com/videos/fibonacci-and-mandelbrot?rq=mandelbrot">Fibonacci and Mandelbrot</a></li>
+</ul>
+
+<p>In 2021 I was working with NumPy on a side-project. I had done some work with <a href="https://pillow.readthedocs.io/en/stable/">Pillow</a> and I wondered if I could use NumPy and Pillow to produce a simple visualization of the Mandelbrot Set. I decided to check the Wikipedia page on the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot Set</a> to see how it’s defined mathmatically.</p>
+
+\[f_c(z) = z^{2} + c\]
+
+<p>This equation states to square a number \(z\) and then add some constant \(c\). What happens if you treat the output of one operation as the input to the next? So, for intial values of \(z = 1\) and \(c = 2\), the output is 3. Feeding this new value of \(z\) into the equation and keeping \(c = 2\) produces 11. Repeating this process and the values quickly diverge to infinity. Setting the values \(z = 1\) and \(c = -1\) and the process alternates between \(0\) and \(-1\). Setting \(z = 1.6\) and \(c = -1\) and the process eventually alternates between \(0\) and \(-1\). Setting \(z = 1.7\) and \(c = -1\) and the process diverges to infinity. What are the bounds of \(z\) and \(c\) such that \(z\) and \(c\) do not diverge to infinity? What if \(c\) is allowed to include imaginary numbers such as \(2 - 8i\), what are those bounds? Visualizing when a set of initial values diverge or do not diverge to infinity is the Mandlebrot set.</p>
+
+<p>This is a relatively simple operation. We can use NumPy (because it can work with <a href="https://numpy.org/doc/stable/reference/generated/numpy.imag.html">complex</a> numbers) to produce the values in the Mandelbrot Set and Pillow to produce the visualization. This short tutorial produces the VERY SIMPLE black and white visualization of the Mandlebrot set as seen below:</p>
+
+<p><img src="https://raw.githubusercontent.com/mike-babb/simple_fractal/main/simple_fractal_bw.bmp" alt="Mandelbrot Set" width="250" /></p>
+
+<p>(Note that this image has been reduced. The size of the image produced by the Jupyter Notebook is 1000x1000.)</p>
+
+<p>There are two parts to producing this graphic. This first part is a function that evaluates a combination of \(z\) and \(c\) to see if it diverges to infinity. This function returns \(1\) if the initial values diverge or \(0\) if the initial values do not diverge.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># define a function that evaluates z = z^2 + c
+</span><span class="k">def</span> <span class="nf">iteration_function</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">display_value</span> <span class="o">=</span> <span class="bp">False</span><span class="p">):</span>    
+    <span class="s">""" EVALUATE z = z^2 + c n times. If after n trials z is less than 100, 
+    assume that z does not diverge to infinity.
+    z: real number
+    c: complex number
+    n: number of iterations to check
+    display_value: boolean: Switch to print the current value
+    """</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># set the outcome to zero, meaning it does not diverge
+</span>    <span class="n">outcome</span> <span class="o">=</span> <span class="mi">0</span>    
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span> <span class="ow">and</span> <span class="n">outcome</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>        
+        
+        <span class="n">z</span> <span class="o">=</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">c</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">display_value</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">np</span><span class="p">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+            <span class="n">real_part</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">real</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
+            <span class="n">imag_part</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">imag</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
+            
+            <span class="k">if</span> <span class="n">real_part</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="ow">or</span> <span class="n">imag_part</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+                <span class="n">outcome</span> <span class="o">=</span> <span class="mi">1</span>            
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">outcome</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="c1"># return the outcome and the number of iterations it took to crest 100
+</span>    <span class="k">return</span> <span class="p">(</span><span class="n">outcome</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>          
+</code></pre></div></div>
+
+<p>The second part generates the input values using <code class="language-plaintext highlighter-rouge">np.linspace</code>, opens the output image, and evaluates the initial values. Effectively, one set of initial values gets mapped onto each output pixel.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># use values in the (-2, 2) interval
+</span><span class="n">my_values</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="n">stop</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">n_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_values</span><span class="p">)</span>
+
+<span class="n">output_file_name</span> <span class="o">=</span> <span class="s">'simple_fractal_bw.bmp'</span>
+
+<span class="c1"># create a new blank image n_rows by n_rows with the RGB color depth
+</span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s">'1'</span><span class="p">,</span> <span class="p">(</span><span class="n">n_rows</span><span class="p">,</span> <span class="n">n_rows</span><span class="p">))</span>
+<span class="n">pixels</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">load</span><span class="p">()</span>
+
+<span class="c1"># enumerate over the values, create complex numbers, and see which values diverge to infinity
+</span><span class="k">for</span> <span class="n">i_enum</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_values</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i_enum</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i_enum</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">j_enum</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_values</span><span class="p">):</span>
+        <span class="c1">#print(i_enum, j_enum)
+</span>        <span class="n">outcome</span> <span class="o">=</span> <span class="n">iteration_function</span><span class="p">(</span><span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">),</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">display_value</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">outcome</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># 0 if the value does not diverge: black
+</span>            <span class="c1">#rgb_tuple = (0,0,0)
+</span>            <span class="n">rgb_tuple</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># 1 if the value does diverge: white
+</span>            <span class="c1">#rgb_tuple = (255,255,255)
+</span>            <span class="n">rgb_tuple</span> <span class="o">=</span> <span class="mi">1</span>
+        
+        <span class="n">pixels</span><span class="p">[</span><span class="n">i_enum</span><span class="p">,</span> <span class="n">j_enum</span><span class="p">]</span> <span class="o">=</span> <span class="n">rgb_tuple</span>
+
+<span class="c1"># save the image
+</span><span class="n">img</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_file_name</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Most people are familiar with the wild and beautiful intricacy of the Mandlebrot set. The colors are based on how “quickly” a set of initial values diverge to infinity. The visualization in this tutorial is not one of those. This is using NumPy and PIL to make a simple visualization. If you are interested in panning and zooming around the Mandelbrot set, check out this <a href="https://math.hws.edu/eck/js/mandelbrot/MB.html">page</a>.</p>
+
+:ET
