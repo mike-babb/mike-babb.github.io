@@ -1,4 +1,4 @@
-I"-<h1 id="visualize-the-mandelbrot-set">Visualize the Mandelbrot Set</h1>
+I"&-<h1 id="visualize-the-mandelbrot-set">Visualize the Mandelbrot Set</h1>
 
 <p>Sometime ago I read <a href="https://en.wikipedia.org/wiki/Chaos:_Making_a_New_Science">Chaos: Making a New Science</a> by James Gleick. Very cool book. And ever since then I’ve been interested in <a href="https://en.wikipedia.org/wiki/Fractal">fractals</a>. One of my favorite youtube channels, <a href="https://www.numberphile.com/">Numberphile</a>, has several videos on fractals and the Mandelbrot Set in particular:</p>
 <ul>
@@ -10,12 +10,13 @@
 
 \[f_c(z) = z^{2} + c\]
 
-<p>This equation states to square a number \(z\) and then add some constant \(c\). What happens if you treat the output of one operation as the input to the next? So, for intial values of \(z = 1\) and \(c = 2\), the output is 3. Feeding this new value of \(z\) into the equation and keeping \(c = 2\) produces 11. Repeating this process and the values quickly diverge to infinity. Setting the values \(z = 1\) and \(c = -1\) and the process alternates between \(0\) and \(-1\). Setting \(z = 1.6\) and \(c = -1\) and the process eventually alternates between \(0\) and \(-1\). Setting \(z = 1.7\) and \(c = -1\) and the process diverges to infinity. What are the bounds of \(z\) and \(c\) such that \(z\) and \(c\) do not diverge to infinity? What if \(c\) is allowed to include imaginary numbers such as \(2 - 8i\), what are those bounds? Visualizing when a set of initial values diverge or do not diverge to infinity is the Mandlebrot set.</p>
+<p>This equation states to square a number \(z\) and then add some constant \(c\). What happens if you treat the output of one operation as the input to the next? So, for intial values of \(z = 1\) and \(c = 2\), the output is 3. Feeding this new value of \(z\) into the equation and keeping \(c = 2\) produces 11. Repeating this process and the values quickly diverge to infinity. Setting the values \(z = 1\) and \(c = -1\) and the process alternates between \(0\) and \(-1\). Setting \(z = 1.6\) and \(c = -1\) and the process eventually alternates between \(0\) and \(-1\). Setting \(z = 1.7\) and \(c = -1\) and the process diverges to infinity. What are the bounds of \(z\) and \(c\) such that \(z\) and \(c\) do not diverge to infinity? What if \(c\) is allowed to include imaginary numbers such as \(2 - 8i\), what are those bounds? Visualizing when a set of initial values diverge or do not diverge to infinity is the Mandelbrot set.</p>
 
-<p>This is a relatively simple operation. We can use NumPy (because it can work with <a href="https://numpy.org/doc/stable/reference/generated/numpy.imag.html">complex</a> numbers) to produce the values in the Mandelbrot Set and Pillow to produce the visualization. This short tutorial produces the VERY SIMPLE black and white visualization of the Mandlebrot set as seen below:</p>
+<p>This is a relatively simple operation. We can use NumPy (because it can work with <a href="https://numpy.org/doc/stable/reference/generated/numpy.imag.html">complex</a> numbers) to produce the values in the Mandelbrot Set and Pillow to produce the visualization. This short tutorial produces the VERY SIMPLE black and white visualization of the Mandelbrot set as seen below:</p>
 
-<p><img src="https://raw.githubusercontent.com/mike-babb/simple_fractal/main/simple_fractal_bw.bmp" alt="Mandelbrot Set" width="250" />
-(Note that this image has been reduced. The size of the image produced by the Jupyter Notebook is 1000x1000.)</p>
+<p><img src="https://raw.githubusercontent.com/mike-babb/simple_fractal/main/simple_fractal_bw.bmp" alt="Mandelbrot Set" width="250" /></p>
+
+<p>(Note that this image has been reduced. The size of the image produced by the Jupyter Notebook is 1000x1000.)</p>
 
 <p>There are two parts to producing this graphic. This first part is a function that evaluates a combination of \(z\) and \(c\) to see if it diverges to infinity. This function returns \(1\) if the initial values diverge or \(0\) if the initial values do not diverge.</p>
 
@@ -85,6 +86,6 @@
 </span><span class="n">img</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_file_name</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Most people are familiar with the wild and beautiful intricacy of the Mandlebrot set. The colors are based on how “quickly” a set of initial values diverge to infinity. The visualization in this tutorial is not one of those. This is using NumPy and PIL to make a simple visualization. If you are interested in panning and zooming around the Mandelbrot set, check out this <a href="https://math.hws.edu/eck/js/mandelbrot/MB.html">page</a>.</p>
+<p>Most people are familiar with the wild and beautiful intricacy of the Mandelbrot set. The colors are based on how “quickly” a set of initial values diverge to infinity. The visualization in this tutorial is not one of those. This is using NumPy and PIL to make a simple visualization. If you are interested in panning and zooming around the Mandelbrot set, check out this <a href="https://math.hws.edu/eck/js/mandelbrot/MB.html">page</a>.</p>
 
 :ET

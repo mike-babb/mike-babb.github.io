@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog Updates, 2022-02-07"
+title: "Blog updates, 2022-02-07"
 date: 2022-02-07
 categories: blogging
 ---
@@ -12,7 +12,7 @@ I am learning a lot.
 After I launched this blog in January, I set out to publish some advice on how I finished grad school. I just published my, what turned out to be a five part series on how I finished grad school. Just typing  
 that out loud makes me laugh.
 
-Clearly, it took a while to type that up. But! That's not why I'm writing this post. I'm writing this post because I wanted to add a "last update field" to my posts. So many things are iterative! And I want to put stuff out sooner rather than later. And I realize that one of the things preventing that is an update date. I'll start a post, but it won't be complete until a few days later. I don't want to keep updating the date field in the markdown's header. Of course, there is a plugin for that. Yay for jekyll! It took me a while to understand how to configure the pluging and in the process I learned a little bit more about jekyll.
+Clearly, it took a while to type that up. But! That's not why I'm writing this post. I'm writing this post because I wanted to add a "last update field" to my posts. So many things are iterative! And I want to put stuff out sooner rather than later. And I realize that one of the things preventing that is an update date. I'll start a post, but it won't be complete until a few days later. I don't want to keep updating the date field in the markdown's header. Of course, there is a plugin for that. Yay for jekyll! It took me a while to understand how to configure the plugin and in the process I learned a little bit more about jekyll.
 
 The plugin is called [jekyll-last-modified-at](https://github.com/gjtorikian/jekyll-last-modified-at). And this [page](https://tomkadwill.com/adding-last-modified-date-to-jekyll) features a little more information on how to implement the plugin. Both pages feature instructions and once I understood a little bit more about how to build a webpage using jekyll, the instructions make a lot of sense. I'm approaching web development as a complete novice. So, here is what I did:
 

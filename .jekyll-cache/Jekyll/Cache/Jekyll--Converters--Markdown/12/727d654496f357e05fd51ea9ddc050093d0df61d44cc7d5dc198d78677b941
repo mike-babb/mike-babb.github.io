@@ -1,0 +1,34 @@
+I"Ã<h1 id="now-with-math">Now with math!</h1>
+<p>Always learning moreâ€¦ Last night I figured out how implement math equations. I put my first equation in my previous on making a simple fractal. As for how I did it? I gathered information from the following pages:</p>
+
+<ul>
+  <li><a href="https://vincenttam.github.io/blog/2014/11/09/mathjax-local-configuration-file/">MathJax Local Configuration File</a></li>
+  <li><a href="https://alanduan.me/random/mathjax/">Using mathjax on GitHub Pages with Jekyll </a></li>
+  <li><a href="http://webdocs.cs.ualberta.ca/~zichen2/blog/coding/setup/2019/02/17/how-to-add-mathjax-support-to-jekyll.html">How to add mathjax support to jekyll</a></li>
+</ul>
+
+<p>There is some overlap in these pages but by consulting them I was able to configure my site to display math. I had to modify my default.html file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+		&lt;script type="text/javascript" async
+			src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"&gt;
+			&lt;/script&gt;
+		
+</code></pre></div></div>
+
+<p>and my _config.yml file.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+</code></pre></div></div>
+
+<h1 id="new-data">New data!</h1>
+<p>In an recent interview I was asked to perform some analyses on a dataset from 
+analytics.usa.gov. 
+Some cool stuff there. 
+https://analytics.usa.gov/data/</p>
+
+<h1 id="a-notepad--things-to-learn">A notepad / things to learn?</h1>
+<p>An ever evolving list of things I am interested in.
+https://cran.r-project.org/web/packages/BART/index.html</p>
+
+:ET
