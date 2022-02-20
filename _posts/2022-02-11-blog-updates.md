@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "blog updates 2022-02-11, new data and an R-library to check out"
+title: "Blog updates 2022-02-11, new data and an R-library to check out"
 date: 2022-02-10
-categories: math, mathjax, LaTex, blow how to.
+categories: math, mathjax, LaTex, blog how to
 usemathjax: true
 ---
 
