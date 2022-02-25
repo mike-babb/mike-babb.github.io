@@ -2,33 +2,47 @@
 <html>
 
 <head>
-    <meta charset=utf-8 />
-    <title> {% if page.title %} {{ page.title }} | {% endif %} CV</title>
-    <link href="media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
+	<title>{{ page.title }}</title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/cv">CV</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-    </nav>
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/cv">CV</a></li>
+			<li><a href="/blog">Blog</a></li>
+		</ul>
+	</nav>
+	<div class="container">
 
-    <div id="main">
-        <div id="content">
-            {{ content }}
-        </div>
-    </div>
-    <footer>
-        <ul>
-            <li><a href="mailto:babbm@uw.edu">email</a></li>
-            <li><a href="https://github.com/mike-babb">github.com/mike-babb</a></li>
-        </ul>
-    </footer>
+		{{ content }}
+
+		{% if page.usemathjax %}
+		<script type="text/javascript" async
+			src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+			</script>
+		{% endif %}
+
+		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+			{%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+		
+			{%- if page.last_modified_at -%}
+				Last updated: {{ page.last_modified_at | date: date_format }}
+			{%- else -%}
+				Last updated: {{ page.date | date: date_format }}
+			{%- endif -%}
+		  </time>
+
+	</div><!-- /.container -->
+	<footer>
+		<ul>
+			<li><a href="mailto:babbm@uw.edu">email</a></li>
+			<li><a href="https://github.com/mike-babb">github.com/mike-babb</a></li>
+		</ul>
+	</footer>
 </body>
 
 </html>

@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: cv
 title: Babb - CV
+date: 2022-02-22
 ---
+[downloadble version](/cv/Resume_Michael_Babb_2022.pdf)
 
 # Michael Babb, PhD
 data scientist | computational geographer
@@ -11,7 +13,6 @@ data scientist | computational geographer
 | <a href="https://mike-babb.github.io/">github.io</a>
 </div>
 
-
 ## Specialization
 
 Data science, spatial analysis, cartography and geovisualization, GIS, and population science.
@@ -20,7 +21,7 @@ Data science, spatial analysis, cartography and geovisualization, GIS, and popul
 
 `2021` PhD, Geography, University of Washington
 <p style = "font-family: 'Ubuntu', sans-serif; font-size:12pt">
-&nbsp;&nbsp;&nbsp;&nbsp; <a href="diss">Dissertation: Dimensions of Interstate and Intrastate Migration, 1990 - 2015</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="diss">Dissertation: Dimensions of Interstate and Intrastate Migration, 1990 - 2015 (summary)</a>
 </p>
 `2009` MA, Geography, University of Washington\
 `2005` BA, Geography, University of Washington
@@ -67,7 +68,7 @@ U.S. Bureau of Census
 <!--
 uncomment when I write my full CV. still needs work. ###### Please click [here](full_cv) for my full CV.
 -->
-##### Last updated January 2022
+
 
 <!-- ### Footer
 Last updated: January 2022 -->

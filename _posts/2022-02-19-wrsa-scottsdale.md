@@ -15,4 +15,4 @@ I arrived on Thursday and I head back to Seattle on Tuesday.
 2022 02 22 0027
 What a great time! I've had a lot of fun. I'm currently in my hotel room, packing for tomorrow, drinking a grapefruit white claw, and reflecting. It's been a great trip. I'm going to fly into Paine Field, an airport north of SEA-TAC. 
 
-I had tacos. I walked. I had tiki drinks. The tacos and the walks were great, the tiki drinks were less so. I know how to make a martini and a daiquiri like none other (recipe to follow). I think I will develop my mai tai skills. 
+I had tacos. I walked. I had tiki drinks. The tacos and the walks were great, the tiki drinks were less so. I know how to make a martini and a daiquiri like none other (recipes to follow). I think I will develop my mai tai skills. 
