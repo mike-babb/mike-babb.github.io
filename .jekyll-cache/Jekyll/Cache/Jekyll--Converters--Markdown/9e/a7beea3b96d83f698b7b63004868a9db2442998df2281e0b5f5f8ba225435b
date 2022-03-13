@@ -1,0 +1,12 @@
+I"6<h1 id="software-should-help">Software should help</h1>
+<p>I am a big believer that software features should exist to make our lives easier. This isn’t a revolutionary stance by any means. Rather, I mention it because I sometimes forget to use the software in a way that helps me. I was recently reminded of how useful software can be when I decided to clean up my email inbox by applying a series of rules in Microsoft Outlook.</p>
+
+<h1 id="the-deluge-of-information">The deluge of information</h1>
+<p>I am currently on the job market. This means that I have set up job alerts and because I posses a certain skillset that is in high demand, I am getting flooded with emails. Dozens a day. This is a good problem to have, no doubt. Because of this volume of email and the flood of text in these emails, I am missing opportunities. And I am also missing non job-search related emails because everything was getting dumped to my inbox and messages were not compartmentalized. I access email on my phone and my tablet, as well. What this means is that throughout the day I am constantly seeing new email arrive, even though it’s not all high priority. But, because of the notification badge, I found myself checking my phone far more often. Nope! Gotta put an end to that. And the way I did it was by setting up rules in MS outlook.</p>
+
+<h1 id="rules-to-the-rescure">Rules to the rescure</h1>
+<p>The simplest way to set a rule is to right click on a message, select “Rules”, and then “Create Rule”. You’ll see several options. If you click “Advanced Options…” you’ll see even more. The real power of these rules wasn’t setting rules for each sender, but rather by setting emails for domains. And the way to accomplish that is to create a condition that filters on “specific words in the sender’s address”. So now, anything with “indeed.com” in the senders address is routed to a specific folder. I repeated this for several other domains and hundreds of messages were quickly sorted.</p>
+
+<p>It’s a minor action, but it really helped with processing information.</p>
+
+:ET

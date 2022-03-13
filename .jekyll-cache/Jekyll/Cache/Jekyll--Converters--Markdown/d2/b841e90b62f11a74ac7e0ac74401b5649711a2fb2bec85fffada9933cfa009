@@ -1,0 +1,18 @@
+I"�<h1 id="discovering-relationships-between-words">Discovering relationships between words</h1>
+<p>How can we can discover and formalize relationships between words? For example, how can we determine that the words ‘emit’, ‘item’, ‘mite’, and ‘time’ are anagrams? That is, the letters in each of those words in this group can be rearranged to spell a different word. How many word groups are there? Further more, how can we determine that some of the letters in the word ‘terminator’ can be used to spell ‘emit’ (or ‘item’, or ‘mite’, or ‘time’, or other words)?</p>
+
+<p>The <a href="https://github.com/mike-babb/finding_anagrams">finding anagrams workshop</a> accomplishes two tasks:</p>
+<ul>
+  <li>Finding exact anagrams: the valid combinations of letters in the ‘emit’ word group</li>
+  <li>Discovering and formalizing from/to word relationships: the word ‘emit’ can be spelled using letters in the word ‘terminator’.</li>
+</ul>
+
+<h1 id="from-words-to-vectors">From words to vectors!</h1>
+
+<h1 id="use-a-matrix">Use a matrix!</h1>
+
+<h1 id="but-wait-theres-more">But wait, there’s more</h1>
+
+<h1 id="why-use-one-matrix-when-you-can-use-many-matrices">Why use one matrix when you can use many matrices?</h1>
+
+:ET

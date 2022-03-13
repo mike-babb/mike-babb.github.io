@@ -1,0 +1,14 @@
+I"f<h1 id="discovering-relationships-between-words">Discovering relationships between words</h1>
+<p>How can we can discover and formalize relationships between words? For example, how can we determine that the words ‘emit’, ‘item’, ‘mite’, and ‘time’ are anagrams? That is, the letters in each of those words in this group can be rearranged to spell a different word. How many word groups are there? Further more, how can we determine that some of the letters in the word ‘terminator’ can be used to spell ‘emit’ (or ‘item’, or ‘mite’, or ‘time’, or other words)?</p>
+
+<p>The <a href="https://github.com/mike-babb/finding_anagrams">finding anagrams workshop</a> accomplishes two tasks:</p>
+<ul>
+  <li>Finding exact anagrams: the valid combinations of letters in the ‘emit’ word group</li>
+  <li>Discovering and formalizing from/to word relationships: the word ‘emit’ can be spelled using letters in the word ‘terminator’.</li>
+</ul>
+
+<p>The workshops presents the tasks as Extract-Transform-Load pipeline using python, numpy, and SQLite. Briefly, python and pandas is used to import, shape, and peform some intial processing on a list of approximately 236K words. Pandas is used to find the exact anagrams. Next, the list of words are represented as matrix and NumPy is used to perform many matrix calculations to discover and formalize the from/to word relationships. Key to this portion of the process is how much pre-processing the user wants to perform. Without any preprocessing, the discovery and formalization process takes 120 minutes. With a moderate amount of preprocessing, the from/to discovery and formalization process takes a little over 2 minutes. The differences in processing times make use of carefully matrix operations that are possible through NumPy.</p>
+
+<p>I’ll describe this process in more detail in this blog post at a later date in time. For now, I’ll refer readers to the <a href="https://github.com/mike-babb/finding_anagrams/blob/main/Finding%20Anagrams%20v2.0.pptx?raw=true">PowerPoint included in the github repo</a> that describes the process in greater detail.</p>
+
+:ET
