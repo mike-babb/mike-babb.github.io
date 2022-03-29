@@ -13,7 +13,7 @@ My dissertation enhances and makes use of county-to-county household migration d
 several dimensions of interstate and intrastate migration during the 1990 through 2015
 period.
 
-The first of three empirical chapter describes an algorithm that combines spatial interaction
+The first of three empirical chapters describes an algorithm that combines spatial interaction
 modelling and linear optimization programming techniques to enhance publicly available
 county-to-county migration data. The algorithm produces estimates of flows between county-to-county pairs not previously reported due to censoring. The implementation of this algorithm generates an additional approximately 500K records per year. This triples the within-state migration complete case count and increases the interstate migration complete case count by 13-fold. The increased records mean that the migration of an additional approximately 1.6 million households per year, a 30-percent increase, can be incorporated into subsequent analyses. The inclusion of additional records serves to decrease potential biases originating from the omission of data. 
 

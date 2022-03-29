@@ -1,0 +1,42 @@
+I"g	<h1 id="wordle-so-hot-right-now">Wordle: so hot right now</h1>
+<p>Like most people, I am captivated by wordle. It’s a fun exercise. Especially on a bus!
+Because it’s simple enough and working with a finite set of data, I wanted to programmatically explore the data space. So, two things came to mind:</p>
+<ul>
+  <li>Is there a way to rank words in order to suggest the best starting word?</li>
+  <li>Can I build a simple solver that suggests words given letters known to be in the word, the position, and letters not in the word?</li>
+</ul>
+
+<p><a href="https://github.com/mike-babb/wordle_fun">Yes and yes we can.</a></p>
+
+<h1 id="v10">V1.0</h1>
+<p>I use python, pandas, and NumPy to determine the top starting word and the solver. I make use of all five-letter words as found in the list of words in my <a href="https://github.com/mike-babb/finding_anagrams">finding anagrams workshop.</a></p>
+
+<p>V1.0 is feature complete. Both the top starting word and solver work correctly. To determine the top starting word, I counted the occurence of each letter across all five-letter words in my list of 9,972 words. Each letter is then assigned this score. The score of each word is the sum of each letter’s score in the word. The higher the score, the better the word is to use as a starter. Using this metric, ‘raise’ is the best word to start with. In addition, this metric is the quickest way to remove possible words.</p>
+
+<p>The five most common letters in five letter words are:
+<br />
+‘a’, ‘e’, ‘r’, ‘i’, ‘o’
+<br />
+Four vowels and one consonant. Makes sense…</p>
+
+<p><img src="/assets/letter_score.png" alt="frequency of letter occurence" /></p>
+
+<p>The ten best starting words/word groups with five unique letters are:</p>
+
+<ol>
+  <li>[‘aries’, ‘arise’, ‘raise’, ‘serai’]</li>
+  <li>[‘arose’, ‘oreas’]</li>
+  <li>[‘ariel’]</li>
+  <li>[‘leora’]</li>
+  <li>[‘erian’, ‘irena’, ‘reina’]</li>
+  <li>[‘arite’, ‘artie’, ‘irate’, ‘retia’, ‘tarie’]</li>
+  <li>[‘orate’]</li>
+  <li>[‘arles’, ‘arsle’, ‘laser’, ‘seral’, ‘slare’]</li>
+  <li>[‘anser’, ‘nares’, ‘rasen’, ‘snare’]</li>
+  <li>[‘aster’, ‘serta’, ‘stare’, ‘strae’, ‘tarse’, ‘teras’]</li>
+</ol>
+
+<h1 id="v20-tbd">V2.0: TBD</h1>
+<p>Create a web-based interface to interact with the solver.</p>
+
+:ET
