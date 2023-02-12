@@ -15,6 +15,6 @@ It works. It works? It works! I'm currently editing a document that I did not cr
 ## Figures and tables
 That being said. I am in the delightful throes of working with figures and tables in MS Word. It is a special kind of madness. Throw in track changes and wowza. Like Depeche Mode said, ["things get damaged"](https://genius.com/Depeche-mode-precious-lyrics)*.
 
-*I know this song is not about dissertations. But I believe the record will show that I love making meaning out everything. 
+*I know this song is not about MS Word. Great song and great lyrics. 
 
 
