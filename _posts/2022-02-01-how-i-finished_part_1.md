@@ -10,7 +10,7 @@ I learned a lot over the course of my dissertation. Not only my topic, my sub-di
 
 ## "How can I help you finish?"
 ### _People are supportive_
-A dear friend asked me how he could help me finish. (As did a few more, but I wasn't ready to listen or share at that time). That feeling of support was unparalleled. That is what got me going – but it's not what got me through. This is a dissertation – friends and family will encourage you. And while they won't do it for you, they can help. Knowing that people wanted to see me suceed sparked the motivation engine. People are in your corner and they want to see you suceed.
+A dear friend asked me how he could help me finish. (As did a few more, but I wasn't ready to listen or share at that time). That feeling of support was unparalleled. That is what got me going – but it's not what got me through. This is a dissertation – friends and family will encourage you. And while they won't do it for you, they can help. Knowing that people wanted me to suceed was incredible. Simply put, there are people in your corner and they want to see you suceed.
 
 ## Dissertation journal
 ### _Write about writing_

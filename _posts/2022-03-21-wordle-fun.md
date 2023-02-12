@@ -7,7 +7,7 @@ usemathjax: true
 ---
 
 # Wordle: so hot right now
-Like most people, I am captivated by wordle. It's a fun exercise. Especially on a bus!
+Like most people, I am captivated by wordle. It's a fun exercise. Especially on a bus.
 Because it's simple enough and working with a finite set of data, I wanted to programmatically explore the data space. So, two things came to mind:
 - Is there a way to rank words in order to suggest the best starting word?
 - Can I build a simple solver that suggests words given letters known to be in the word, the position, and letters not in the word?
