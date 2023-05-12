@@ -9,8 +9,7 @@ categories: blogging
 
 I am learning a lot.
 
-After I launched this blog in January, I set out to publish some advice on how I finished grad school. I just published my, what turned out to be a five part series on how I finished grad school. Just typing  
-that out loud makes me laugh.
+After I launched this blog in January, I set out to publish some advice on how I finished grad school. I just published a five part series on how I finished grad school. Just typing that out loud makes me laugh.
 
 Clearly, it took a while to type that up. But! That's not why I'm writing this post. I'm writing this post because I wanted to add a "last update field" to my posts. So many things are iterative! And I want to put stuff out sooner rather than later. And I realize that one of the things preventing that is an update date. I'll start a post, but it won't be complete until a few days later. I don't want to keep updating the date field in the markdown's header. Of course, there is a plugin for that. Yay for jekyll! It took me a while to understand how to configure the plugin and in the process I learned a little bit more about jekyll.
 
