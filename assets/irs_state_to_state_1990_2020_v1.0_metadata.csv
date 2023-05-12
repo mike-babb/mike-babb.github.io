@@ -1,0 +1,14 @@
+column_name,description
+fname,File name.
+tax_year,Tax year: starting and ending years of the tax season.
+fn_mig_flow_recode,The migration flow direction based on parsing information found in the file name.
+fn_state_abbr,The state abbreviation based on parsing information found in the file name.
+ref_st_fips,The reference state FIPS code based on data found in the migration file. This is the destination for incoming migration and the origin for outgoing migration.
+non_ref_st_fips,The non-reference state FIPS code: based on data found in the migration file. This is the origin for incoming migration and the destination for outgoing migration.
+non_ref_st_abbr,The non-reference state abbreviation. This is the origin for incoming migration and the destination for outgoing migration.
+description,A more verbose description of the record type.
+returns,The number of tax returns: a proxy for households.
+exemptions,The number of tax exemptions: a proxy for individuals.
+agg_inc,The aggregate adjusted income in thousands. Not present in years 1990 and 1991.
+mig_flow,The migration flow direction as determined by data in the file.
+file_row_index,The row index of the data as found in the input Excel file. Excel files begin indexing on row 1.
