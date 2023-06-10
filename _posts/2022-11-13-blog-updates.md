@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Word, LaTex, and Markdown"
+title: "jobified"
 date: 2022-11-13
 categories: technology, life, and blog updates
 usemathjax: true
