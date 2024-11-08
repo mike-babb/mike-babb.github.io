@@ -23,8 +23,6 @@ Data science, spatial analysis, cartography and geovisualization, GIS, and popul
 <p style = "font-family: 'Ubuntu', sans-serif; font-size:12pt">
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="diss">Dissertation: Dimensions of Interstate and Intrastate Migration, 1990 - 2015 (summary)</a>
 </p>
-`2009` MA, Geography, University of Washington\
-`2005` BA, Geography, University of Washington
 
 ## Publications
 
