@@ -6,7 +6,7 @@ categories: dissertation advice
 ---
 
 # On writing
-Through my dissertation process I learned a lot about how I wrote and what worked well. If I had to recommend one piece of advice from this section it would be to write every day. It doesn't matter if it's a lot or a little, just write every day. 
+Through my dissertation process I learned a lot about how I write and what worked well. If I had to recommend one piece of advice from this section it would be to write every day. It doesn't matter if it's a lot or a little, just write every day. 
 
 ## Just write
 ### _Write first, edit later._

@@ -42,19 +42,19 @@ And the breaks were incredibly helpful. I would stop working and do something el
 
 And somedays, especially after a rough start, it became a bit of a game. How much work could I get done in 12 minutes? Could I put down a paragraph of coherent text in 12 minutes? Could I write a function that returns what I need? That was kind of cool. 
 
-Most days, after a few pomodoros I found a grove, turned off the pomodoros, and kept working. Some days, the pomodoros helped me chanel my energy. Some days I was too scattered to focus and the 12-minute bursts helped me get it done. 
+Most days, after a few pomodoros I found a groove, turned off the pomodoros, and kept working. Some days, the pomodoros helped me chanel my energy. Some days I was too scattered to focus and the 12-minute bursts helped me get it done. 
 
 ## Make a map or other data visualization
 ### _Get creative!_
-Sometimes when I was stuck or feeling uninspired I would make a map or other data visualization. For me, the mapping and the data visualization is when I felt most creative and most productive. My favorite part was picking the colors and refining line weights to make the graphics come alive. Sometimes the graphics would end up in a chapter and sometimes they would answer a linger question about my data. I'll never forget the day I was stuck writing the justification for a chapter. I was getting frustrated and decided to switch to a data analysis problem I had been thinking about for the previous week. I went to my favorite coffee shop, drank coffee, and worked for a very pleasant few hours. I realized the best way to address the data analysis problem was to prepare a visualization of the issue. After making and refining the graphic I realized that the graphic featured justification for one of my empirical chapters. I then went to one of my favorite bars to celebrate with a mai-tai, tweak the graphic a little more, and put down some initial remarks describing the graphic. That was a great night.
+Sometimes when I was stuck or feeling uninspired I would make a map or other data visualization. For me, the mapping and the data visualization is when I felt most creative and most productive. My favorite part was picking the colors and refining line weights to make the graphics come alive. Sometimes the graphics would end up in a chapter and sometimes they would answer a lingering question about my data. I'll never forget the day I was stuck writing the justification for a chapter. I was getting frustrated and decided to switch to a data analysis problem I had been thinking about for the previous week. I went to my favorite coffee shop, drank coffee, and worked for a very pleasant few hours. I realized the best way to address the data analysis problem was to prepare a visualization of the issue. After making and refining the graphic I realized that the graphic featured the justification for one of my empirical chapters. I then went to one of my favorite bars to celebrate with a mai-tai, tweak the graphic a little more, and put down some initial remarks describing the graphic. That was a great night.
 
 Sometimes I've found that working backwards can help me think about a section of a chapter. If I am at a loss for words, I'll start thinking about the visualizations, try out a few, and from there I'll start building a narrative around those visualizations. And from that narrative I can then refine other sections of the chapter.
 
 ## Have a side-project
 ### _Procrastinate productively._
-Don't want to think about your dissertation? Get a side project! I've been known to do ~~a little~~ a lot of procrasti-working. Try and make the side-project beneficial. Maybe it's work for a different chapter? Or a fun project that will help you skill up? Or a dataset you wanted to explore? Or an odd/unclear/fun concept you wanted to visualize?
+Don't want to think about your dissertation? Get a side project! I've been known to do ~~a little~~ a lot of procrasti-working. Try and make the side project beneficial. Maybe it's work for a different chapter? Or a fun project that will help you skill up? Or a dataset you wanted to explore? Or an odd/unclear/fun concept you wanted to visualize?
 
-Get a side-project! I started working on an [anagram finder using python](https://github.com/mike-babb/finding_anagrams). It was a lot of fun to tinker with code in a no-stakes environment.
+Get a side project! I started working on an [anagram finder using python](https://github.com/mike-babb/finding_anagrams). It was a lot of fun to tinker with code in a no-stakes environment.
 
 ## Project Management
 ### _Wearing many hats._
