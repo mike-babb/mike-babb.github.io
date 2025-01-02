@@ -7,7 +7,7 @@ categories: geospatial analysis, street network
 
 # Seattle's Disconnected Street Network
 I just published to my [github](https://github.com/mike-babb/seattle_streets) page a project on identifying Seattle's disconnected street network. Briefly, streets in Seattle start, stop, and resume. A street will run for a few blocks, stop, and then resume with the same name. While I know this happens throughout the city, I was curious if it was common or not. After working on this off and on for the past six months, I was able to create this map:  
-<img src="../media/overall.png" alt="overall" width="500" height="565"/>  
+<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_02_overall.png" alt="overall" width="500" height="565"/>  
 The red lines are the missing connections between streets and the black lines are the existing streets with discontinuities. This map was a lot of fun to make and it was incredible to see represented visually what I long sensed about navigating the city: the streets are disconnected, a little chaotic, and getting around this city can be challenging. Several facts about these added streets:
 
 * 2,497 roads in the study area | 1,933 road miles
