@@ -14,7 +14,7 @@ Sometime ago I read [Chaos: Making a New Science](https://en.wikipedia.org/wiki/
 
 In 2021 I was working with NumPy on a side-project. I had done some work with [Pillow](https://pillow.readthedocs.io/en/stable/) and I wondered if I could use NumPy and Pillow to produce a simple visualization of the Mandelbrot Set. I decided to check the Wikipedia page on the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set) to see how it's defined mathmatically.
 
-$$ f_c(z) = z^{2} + c$$
+$$f_c(z) = z^{2} + c$$
 
 This equation states to square a number $$z$$ and then add some constant $$c$$. What happens if you treat the output of one operation as the input to the next? So, for intial values of $$z = 1$$ and $$c = 2$$, the output is 3. Feeding this new value of $$z$$ into the equation and keeping $$c = 2$$ produces 11. Repeating this process and the values quickly diverge to infinity. Setting the values $$z = 1$$ and $$c = -1$$ and the process alternates between $$0$$ and $$-1$$. Setting $$z = 1.6$$ and $$c = -1$$ and the process eventually alternates between $$0$$ and $$-1$$. Setting $$z = 1.7$$ and $$c = -1$$ and the process diverges to infinity. What are the bounds of $$z$$ and $$c$$ such that $$z$$ and $$c$$ do not diverge to infinity? What if $$c$$ is allowed to include imaginary numbers such as $$2 - 8i$$, what are those bounds? Visualizing when a set of initial values diverge or do not diverge to infinity is the Mandelbrot set.
 
@@ -94,7 +94,7 @@ for i_enum, i in enumerate(my_values):
 img.save(output_file_name)
 ```
 
-Most people are familiar with the wild and beautiful intricacy of the Mandelbrot set. The colors are based on how "quickly" a set of initial values diverge to infinity. The visualization in this tutorial is not one of those. This is using NumPy and PIL to make a simple visualization. If you are interested in panning and zooming around the Mandelbrot set, check out this [page](https://math.hws.edu/eck/js/mandelbrot/MB.html).
+Most people are familiar with the wild and beautiful intricacy of the Mandelbrot set. The colors are based on how "quickly" a set of initial values diverge to infinity. The visualization in this tutorial is *not* one of those. This is using NumPy and PIL to make a simple visualization. If you are interested in panning and zooming around the Mandelbrot set, check out this [page](https://math.hws.edu/eck/js/mandelbrot/MB.html).
 
 
 
