@@ -19,7 +19,7 @@ Several facts about these added streets:
 * 1,357 roads without discontinuities | 421 road miles  
 * 1,140 roads with discontinuities | 1,512 road miles  
 * 3,643 segments added across 1,140 roads | 834 miles   
-* Average added segment length: 0.25 miles
+* Average added segment length: 0.23 miles
 * Median added segment length: 443 feet  
 
 I'll encourage those interested to take look at the project's [README.md](https://github.com/mike-babb/seattle_streets/blob/main/README.md) or this [slide deck](https://github.com/mike-babb/seattle_streets/blob/main/seattles_disconnected_streets_2024_11_20.pptx) for more detailed information on the data driving this project, the python libraries ([GeoPandas](https://geopandas.org/en/stable/getting_started/introduction.html) and [NetworkX](https://networkx.org/), in particular) and techniques I used to identify the gaps in Seattle streets. To that end, the code and the data used to identify the disconnected streets is available for those curious. 
