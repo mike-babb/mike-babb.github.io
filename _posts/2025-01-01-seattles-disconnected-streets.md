@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Identifying Seattle's Disconnected Streets"
+title: "Identifying Seattle's Discontinuous Streets"
 date: 2025-01-01
-categories: geospatial analysis, street network
+categories: geospatial analysis, street network, GeoPandas, NetworkX, webmap
 ---
 
-# Visualizing Street Disconnections
-I just published to my [github](https://github.com/mike-babb/seattle_streets) page a project on identifying Seattle's discontinuous street network. Briefly, streets in Seattle start, stop, and resume. A street will run for a few blocks, stop, and then resume with the same name. While I know this happens throughout the city, I was curious if it was common or not and I wanted to visualize the gaps in each named street. After working on this off and on for the past six months, I was able to create this map:  
+# Visualizing Street Discontinuities
+I just [published](https://github.com/mike-babb/seattle_streets) a project on identifying Seattle's discontinuous street network. Briefly, streets in Seattle start, stop, and resume. A street will run for a few blocks, stop, and then resume with the same name. While I know this happens throughout the city, I was curious if it was common or not and I wanted to visualize the gaps in each named street. After working on this intermittently for the past six months, I was able to create this map:  
 <img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_02_overall.png" alt="overall" width="500" height="565"/>  
 
 [SEE THIS PAGE FOR AN INTERACTIVE MAP OF THE ADDED STREETS](/media/discontinuous_streets.html)
