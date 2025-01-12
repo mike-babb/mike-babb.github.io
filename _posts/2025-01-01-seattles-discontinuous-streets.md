@@ -17,12 +17,18 @@ the streets are disconnected, a little chaotic, and getting around this city can
 
 Several facts about these added streets:
 
-* 2,497 roads in the study area | 1,933 road miles
-* 1,357 roads without discontinuities | 421 road miles  
-* 1,140 roads with discontinuities | 1,512 road miles  
-* 3,643 segments added across 1,140 roads | 834 miles   
-* Average added segment length: 0.23 miles
-* Median added segment length: 443 feet  
+* 2,497 roads in the study area | 1,932 road miles: see these graphics for a comparison of [miles](https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/barplot_miles.png) and [road segments](https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/barplot_segment_count.png)  
+* 1,362 roads without discontinuities | 437 road miles  
+* 1,135 roads with discontinuities | 1,495 road miles  
+* 3,632 segments added across 1,135 roads | 832 miles   
+* Average of ~3.2 segments added per uniquely named road
+* Average added segment length: ~0.23 Miles
+* Median added segment length: ~443 Feet
+* Greatest number of segments added: [14 (1ST AVE NW, 30TH AVE S, 35TH AVE S, W RAYE ST)](https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_04_most_added_segments.png)
+* Longest segment: ~5 Miles:  [7TH PL S](https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_05_longest_added_segments.png)
+* Shortest segment: ~4 Feet: [SW Cloverdale ST ](https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_06_shortest_segment.png)
+
+I particularly like the image of SW Cloverdale ST because it exemplifies how connectivity is in part a function of mode of travel. Clearly, a pedestrian can navigate around that barrier while a vechicle cannot.
 
 I'll encourage those interested to take look at the project's [README.md](https://github.com/mike-babb/seattle_streets/blob/main/README.md) or this [slide deck](https://github.com/mike-babb/seattle_streets/blob/main/seattles_disconnected_streets_2024_11_20.pptx) for more detailed information on the data driving this project, the python libraries ([GeoPandas](https://geopandas.org/en/stable/getting_started/introduction.html) and [NetworkX](https://networkx.org/), in particular) and techniques I used to identify the gaps in Seattle streets. To that end, the code and the data used to identify the disconnected streets is [available](https://github.com/mike-babb/seattle_streets/blob/main/README.md). 
 
@@ -36,7 +42,6 @@ One of the first steps in this project was identifying unique streets. In this v
 Over the course of panning around the completed map and looking at added segments, I noticed odd connections between streets. The two images below are examples of this phenomenon.
 |15TH AVE W                                     |SW FLORIDA ST                                        |
 |-----------------------------------------------|-----------------------------------------------------|
-|<img src="../graphics/ex_08_15th_ave_w.png" alt="15TH AVE W" width="439" height="550"/>|<img src="../graphics/ex_09_sw_florida_st.png" alt="SW FLORIDA ST" width="821" height="550"/>|
+|<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_08_15th_ave_w.png" alt="15TH AVE W" width="439" height="550"/>|<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_09_sw_florida_st.png" alt="SW FLORIDA ST" width="821" height="550"/>|
 
-
-This are data processing artifacts left in the original dataset from the City of Seattle. For 15TH AVE W, the artifacts are to the west, east, and north of the actual road. For SW FLORIDA ST, there are two artifacts: one to the south and one to the nortwest of the actual road. These short segments are usually less than 50 feet. My sense is that these erroneous artifacts appeared during an initial digitizing process. But that's only speculation. Other maps do not show segments with those names. This [file](../data/streets_to_remove.txt) tracks these erroneous artifacts. As of January 10, 2025, I have found 12 short segments and I have removed them for v1.0 and I plan to keep doing so. If you find any more odd segments, drop me a line and let me know. Finally, if anything looks execptionally wrong or you have additional questions, please let me know. I am more than happy to add addtional clarifying information.
+These are data processing artifacts left in the original dataset from the City of Seattle. For 15TH AVE W, the three artifacts are to the west, east, and north of the actual road. For SW FLORIDA ST, there are two artifacts: one to the south and one to the nortwest of the actual road. These short segments are usually less than 50 feet. My sense is that these erroneous artifacts were created during an initial digitizing process. But that's only speculation. Other maps do not show segments with those names. This [file](../data/streets_to_remove.txt) tracks these erroneous artifacts. As of January 10, 2025, I have found 12 short segments and I have removed them for v1.0 and I will do so going forward. I include this text and example graphics to help inform end-users about a potential source of odd-looking connectivities. If you find any more odd segments, drop me a line and let me know. Finally, if anything looks execptionally wrong or you have additional questions, please let me know. I am more than happy to add addtional clarifying information.
