@@ -11,7 +11,7 @@ I just [published](https://github.com/mike-babb/seattle_streets) a project ident
 
 [SEE THIS PAGE FOR AN INTERACTIVE MAP OF THE ADDED STREETS](/media/discontinuous_streets.html)
 
-In the image above, the red lines are the missing/added connections between streets and the black lines are the existing streets with discontinuities. (In the interactive map, there are green lines representing continuous streets). These n map was a lot of fun to make and it was incredible to see represented visually what I long sensed about navigating the city: 
+In the image above, the red lines are the missing/added connections between streets and the black lines are the existing streets with discontinuities. (In the interactive map, there are green lines representing continuous streets). This map was a lot of fun to make and it was incredible to see represented visually what I long sensed about navigating the city: 
 the streets are disconnected, a little chaotic, and getting around this city can be challenging. When I first started this project, I had assumed that I could create a solution using only geospatial tools. That proved to be complicated - if not impossible - as it required a lot of guess-and-check proceedures to see if the correct segments were being joined. After some trial and error, I realized that I was quasi-recreating known graph analysis techniques so I turned to NetworkX to help with the analysis. And in doing so, the analysis became much easier, much quicker, and required a lot less code. It's always nice when that happens. Right tool for the right job, as they say...
 
 Several facts about these added streets:
