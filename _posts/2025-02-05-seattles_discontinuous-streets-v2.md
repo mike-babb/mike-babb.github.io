@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Identifying Seattle's Discontinuous Streets: version 2"
+title: "Seattle's Discontinuous Streets: version 2"
 date: 2025-02-05
 categories: geospatial analysis, street network, GeoPandas, NetworkX, webmap
 ---
 
-# Visualizing Street Discontinuities
+# Visualizing Street Discontinuities: v2.0
 I just [updated](https://github.com/mike-babb/seattle_streets) my project on identifying and visualizing Seattle's discontinuous street network. See this [page](https://mike-babb.github.io/blog/2025/01/01/seattles-discontinuous-streets) for version 1.0.
 
 [SEE THIS PAGE FOR AN INTERACTIVE MAP OF THE ADDED STREETS](/media/discontinuous_streets_vtwo.html)
