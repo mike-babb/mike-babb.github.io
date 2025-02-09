@@ -8,7 +8,7 @@ categories: geospatial analysis, street network, GeoPandas, NetworkX, webmap
 # Visualizing Street Discontinuities: v2.0
 I just [updated](https://github.com/mike-babb/seattle_streets) my project on identifying and visualizing Seattle's discontinuous street network. See this [page](https://mike-babb.github.io/blog/2025/01/01/seattles-discontinuous-streets) for version 1.0.
 
-[SEE THIS PAGE FOR AN INTERACTIVE MAP OF THE ADDED STREETS](/media/discontinuous_streets_vtwo.html)
+[SEE THIS PAGE FOR AN INTERACTIVE MAP OF THE ADDED STREETS](/media/discontinuous_streets_v2.html)
 
 The major change in version 2.0 is that I added the connections between city sectors. For example, there are now connections between W GALER ST and GALER ST and connections between GALER ST and E GALER ST.  
 <img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_12_overall_v2.png" alt="overall" width="500" height="443"/>  
