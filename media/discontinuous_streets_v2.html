@@ -83,7 +83,7 @@
 
     <div id="map"></div>
 
-    <script type="text/javascript" src="city_sections.geojson"></script>
+    <script type="text/javascript" src="city_section_lines.geojson"></script>
     <script type="text/javascript" src="all_streets_diss_v2.geojson"></script>
 
 
@@ -237,6 +237,8 @@
         function getCitySectionColor(category) {
             const colors = {
                 'E': '#2de9ec',
+                'EC': '#1fa1a3',
+                'NC': '#542e78',
                 'N': '#8c4cc8',
                 'NE': '#38CF60',
                 'NW': '#1a4bed',
@@ -251,16 +253,21 @@
         function styleCitySection(feature) {
             return {
                 color: getCitySectionColor(feature.properties.cp),
-                weight: 6,
+                weight: 4,
                 opacity: 1
             };
         }
 
         // load the city sections
-        const all_city_sections = L.geoJson(city_sections, {
+        const all_city_sections = L.geoJson(city_section_lines, {
+            filter: function (feature) {
+                return feature.properties.dist == 40 && feature.properties.li == 0;
+            },
             style: styleCitySection
         }
         ).addTo(map);
+
+
 
 
         // load the street data
@@ -302,7 +309,7 @@
         legend.onAdd = function (map) {
 
             const div = L.DomUtil.create('div', 'info legend');
-            const grades = ['Continuous Street', 'Discontinuous Street', 'Within-Sector Added Street', 'Inter-Sector Added Street'];
+            const grades = ['Continuous', 'Discontinuous', 'Within-Sector Added', 'Inter-Sector Added'];
             const labels = [];
             let from, to;
 
@@ -313,7 +320,7 @@
                 labels.push(`<i style="background:${getColor(i)}"></i> ${from}`);
             }
 
-            div.innerHTML = labels.join('<br>');
+            div.innerHTML = `<strong>Street Type</strong><br> ${labels.join('<br>')}`;
             return div;
         };
 
@@ -326,7 +333,7 @@
 
             const div = L.DomUtil.create('div', 'info city_section_legend');
             // const sections = ["C", "E", "N", "NE", "NW", "S", "SW", "W",];
-            const sections = ["NW", "N", "NE", "W", "C", "E", "SW", "S"];
+            const sections = ["NW", "N", "NE", "W", "NC", "E", "C", "EC", "SW", "S"];
             const section_labels = [];
             let from, to;
 
@@ -338,7 +345,7 @@
                 // section_labels.push(`<i style="background:${getCitySectionColor(from)}"></i> ${from}`);                
                 section_labels.push(`<i style="background:${getCitySectionColor(from)}"></i> ${from}`);
             }
-            div.innerHTML = `<strong>City Section</strong><br><br> ${section_labels.join('<br>')};`
+            div.innerHTML = `<strong>City Section</strong><br> ${section_labels.join('<br>')}`
             return div;
         };
 
