@@ -5,7 +5,6 @@ date: 2025-02-24
 categories: geospatial analysis, street network, GeoPandas, NetworkX, webmap
 ---
 
-# Visualizing Street Discontinuities: v2.1
 I [finished](https://github.com/mike-babb/seattle_streets) my project on identifying and visualizing Seattle's discontinuous street network!  
 [SEE THIS PAGE FOR AN INTERACTIVE MAP OF V2 OF THE ADDED STREETS](/media/discontinuous_streets_v2.html)  
 [SEE THIS PAGE FOR AN INTERACTIVE MAP OF V1 OF THE ADDED STREETS](/media/discontinuous_streets.html)  
@@ -17,6 +16,8 @@ The major change in version 2.0 is that I added the connections between city sec
 
 In the image above, the blue lines are the cross-sector connections and the red lines are the within-sector connections. The connections across the various salt and fresh water bodies really stands out and emphasizes the quasi-grid structure as seen in Seattle's streets. That being said, Galer is probably a little hard to see in that image, so here it is by itself.  
 <img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_11_galer_v2.png" alt="overall" width="500" height="150"/>  
+
+Version 2.0 of this project also features outlines of the various city sectors. The city sectors were created based on the street direction prefix and suffix.When hovering on a segment, all other segments are made transparent and the city sectors can been. 
 
 The minor bump to version 2.1 features modest tweaks to the control flow and a great deal of added documention. The project's [README.md](link) describes the process and the output in great detail. There are also histograms of the different types of added segments. I'll include some highlights about the added within-sector (red) and cross-sector (blue) below:
 
