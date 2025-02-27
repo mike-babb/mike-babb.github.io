@@ -41,9 +41,10 @@ As is often the case with geospatial data, there are minor discrepancies between
 Current connectivity is mostly street-end to street-end because that is usually the shortest distance between two disconnected segments. Sometimes, however, the shortest edge connecting two discontinuous street segments is not street-end to street-end but street-end to mid-point. This is rare, but it has been observed upon visual inspection. [NetworkX](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.degree_centrality.html#networkx.algorithms.centrality.degree_centrality) provides tools to help refine identification of street-end to street-end connectivity. Definitely something to incorporate in v2.0.
 
 Over the course of panning around the completed map and looking at added segments, I noticed odd connections between streets. The two images below are examples of this phenomenon.
-|15TH AVE W|SW FLORIDA ST| 
-|-----|-----|
-|<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_08_15th_ave_w.png" alt="15TH AVE W" width="319" height="400"/>|<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_09_sw_florida_st.png" alt="SW FLORIDA ST" width="597" height="400"/>|
+<p float="left">
+<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_08_15th_ave_w.png" alt="15TH AVE W" width="319" height="400" /> 
+<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_09_sw_florida_st.png" alt="SW FLORIDA ST" width="597" height="400" />
+</p>
 
 This odd connectivity is because of data processing artifacts left in the original dataset from the City of Seattle. For 15TH AVE W, the three artifacts are to the west, east, and north of the actual road. For SW FLORIDA ST, there are two artifacts: one to the south and one to the nortwest of the actual road. These short segments are usually less than 50 feet. My sense is that these erroneous artifacts were created during an initial digitizing process. But that's only speculation. Other maps do not show segments with those names. This [file](https://raw.githubusercontent.com/mike-babb/seattle_streets/main/data/streets_to_remove.txt) tracks these erroneous artifacts. As of January 10, 2025, I have found 12 short segments and I have removed them for v1.0 and I will do so going forward. I include this text and example graphics to help inform end-users about a potential source of odd-looking connectivities. If you find any more odd segments, drop me a line and let me know. 
 
