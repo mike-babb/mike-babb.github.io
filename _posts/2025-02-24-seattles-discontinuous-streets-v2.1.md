@@ -19,7 +19,7 @@ In the image above, the blue lines are the cross-sector connections and the red 
 
 Version 2.0 of this project also features outlines of the various city sectors. The city sectors were created based on the street direction prefix and suffix.When hovering on a segment, all other segments are made transparent and the city sectors can been. 
 
-The minor bump to version 2.1 features modest tweaks to the control flow and a great deal of added documention. The project's [README.md](link) describes the process and the output in great detail. There are also histograms of the different types of added segments. I'll include some highlights about the added within-sector (red) and cross-sector (blue) below:
+The minor bump to version 2.1 features modest tweaks to the control flow and a great deal of added documention. The project's [README.md](https://github.com/mike-babb/seattle_streets/blob/main/README.md) describes the process and the output in great detail. There are also histograms of the different types of added segments. I'll include some highlights about the added within-sector (red) and cross-sector (blue) below:
 
 * 2,453 uniquely named roads in the study area | 1,890 road miles: see these graphics for a comparison of [miles](/graphics/barplot_miles.png) and [road segments](/graphics/barplot_segment_count.png)  
 * 1,145 roads without discontinuities | 312 road miles  
