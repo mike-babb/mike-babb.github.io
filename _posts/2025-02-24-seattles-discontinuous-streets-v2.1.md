@@ -12,10 +12,10 @@ I [finished](https://github.com/mike-babb/seattle_streets) my project on identif
 See this [page](https://mike-babb.github.io/blog/2025/01/01/seattles-discontinuous-streets) for information on version 1.0.
 
 The major change in version 2.0 is that I added the connections between city sectors. For example, there are now connections between W GALER ST and GALER ST and connections between GALER ST and E GALER ST.  
-<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_12_overall_v2.png" alt="overall" width="500" height="443"/>  
+<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_12_overall_v2.png" alt="overall" width="500" height="486"/>  
 
 In the image above, the blue lines are the cross-sector connections and the red lines are the within-sector connections. The connections across the various salt and fresh water bodies really stand out and emphasize the quasi-grid structure as seen in Seattle's streets. That being said, Galer is probably a little hard to see in that image, so here it is by itself.  
-<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_11_galer_v2.png" alt="overall" width="500" height="150"/>  
+<img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_11_galer_v2.png" alt="overall" width="500" height="136"/>  
 
 Version 2.0 of this project also features outlines of the various city sectors. The city sectors were created based on the street direction prefix and suffix.When hovering on a segment, all other segments are made transparent and the city sectors can been. 
 
