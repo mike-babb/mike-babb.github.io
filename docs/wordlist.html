@@ -75,7 +75,7 @@
                 return;
             }
 
-            const filePath = `/webpage/wordlists/${direction}/${selectedWord}.json`;
+            const filePath = `/wordlists/${direction}/${selectedWord}.json`;
 
             fetch(filePath)
                 .then(response => {
