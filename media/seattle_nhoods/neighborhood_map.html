@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Seattle Neighborhoods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 100vh;
+    }
+
+    .label-text-l-hood {
+      background: blue;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: white; 
+      font-weight: bold;
+    }
+
+    .label-text-s-hood {
+      background: red;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([0, 0], 2); // Start zoomed out
+
+    // Add a basemap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Filter function for each layer
+    const filterByDistance_l_hood = (feature) => {
+      return feature.properties.distance == 10 && feature.properties.line_index == 0; // Customize filter here
+    };
+
+    const filterByDistance_s_hood = (feature) => {
+      return feature.properties.distance == 50 && feature.properties.line_index == 0; // Customize filter here
+    };
+
+    // Helper to get center of a feature's bounds
+    const getFeatureCenter = (layer) => {
+      const bounds = layer.getBounds();
+      return bounds.getCenter();
+    };
+
+    // Load and style Layer 1
+    fetch('/media/seattle_nhoods/l_hood.geojson')
+      .then(res => res.json())
+      .then(data => {
+        const layer1 = L.geoJSON(data, {
+          filter: filterByDistance_l_hood,
+          style: { color: 'blue', weight: 3 },
+          onEachFeature: (feature, layer) => {
+            const center = getFeatureCenter(layer);
+            if (feature.properties.l_hood) {
+              L.marker(center, {
+                icon: L.divIcon({
+                  className: 'label-text-l-hood',
+                  html: feature.properties.l_hood,
+                  iconSize: null
+                })
+              }).addTo(map);
+            }
+          }
+        }).addTo(map);
+
+
+        // Add label in center of layer group
+        const center = getFeatureCenter(layer1);
+        if (data.features.length > 0) {
+          L.marker(center, {
+            icon: L.divIcon({
+              className: 'label-text',
+              html: data.features[0].properties.l_hood,
+              iconSize: null
+            })
+          }).addTo(map);
+        }
+      });
+
+    // Load and style Layer 2
+    fetch('/media/seattle_nhoods/s_hood.geojson')
+      .then(res => res.json())
+      .then(data => {
+        const layer2 = L.geoJSON(data, {
+          filter: filterByDistance_s_hood,
+          style: { color: 'red', weight: 3 },
+          onEachFeature: (feature, layer) => {
+            const center = getFeatureCenter(layer);
+            if (feature.properties.s_hood) {
+              L.marker(center, {
+                icon: L.divIcon({
+                  className: 'label-text-s-hood ',
+                  html: feature.properties.s_hood,
+                  iconSize: null
+                })
+              }).addTo(map);
+            }
+          }
+        }).addTo(map);
+
+        const center = getFeatureCenter(layer2);
+        if (data.features.length > 0) {
+          L.marker(center, {
+            icon: L.divIcon({
+              className: 'label-text',
+              html: data.features[0].properties.s_hood,
+              iconSize: null
+            })
+          }).addTo(map);
+        }
+      });
+
+    // Show user's location
+    map.locate({ setView: true, maxZoom: 14 });
+
+    function onLocationFound(e) {
+      L.marker(e.latlng).addTo(map)
+        .bindPopup("You are here").openPopup();
+    }
+
+    map.on('locationfound', onLocationFound);
+
+    function onLocationError(e) {
+      alert(e.message);
+    }
+
+    map.on('locationerror', onLocationError);
+  </script>
+</body>
+
+</html>
