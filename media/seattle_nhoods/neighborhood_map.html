@@ -84,7 +84,7 @@
           style: { color: '#d01c8b', weight: 8 }
         }).addTo(map);
       });
-    
+
     // Load and style Layer 1: thin white lines on top of the magenta lines
     // for the large neighborhoods
     fetch('/media/seattle_nhoods/l_hood.geojson')
@@ -118,16 +118,37 @@
               className = 'label-text-s-hood';
             }
 
-            return L.marker(latlng, {
+            //     return L.marker(latlng, {
+            //       icon: L.divIcon({
+            //         className: className,
+            //         html: feature.properties.label,
+            //         iconSize: null,
+            //         iconAnchor: [feature.properties.h_length * 2, 0] // estimate size
+            //       })
+            //     });
+            //   }
+            // }).addTo(map);
+
+            const marker = L.marker(latlng, {
               icon: L.divIcon({
-                className: className,
+                className,
                 html: feature.properties.label,
-                iconSize: null,
-                iconAnchor: [feature.properties.h_length * 2, 0] // estimate size
+                iconSize: null
               })
             });
+
+            // Attach popup on click with any extra info you want
+            const popupContent = `
+      <strong>${feature.properties.label}</strong><br>
+      ${feature.properties.s_hood_alt_names || 'No additional info'}
+    `;
+
+            marker.bindPopup(popupContent);
+
+            return marker;
           }
         }).addTo(map);
+
       });
 
 
