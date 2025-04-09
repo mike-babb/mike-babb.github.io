@@ -12,19 +12,31 @@
     }
 
     .label-text-l-hood {
-      background: blue;
+      background: rgba(208, 28, 139, 0.9);
+      /* Semi-transparent magenta background */
       padding: 2px 5px;
       border-radius: 4px;
       font-size: 12px;
-      color: white; 
+      color: white;
+      text-align: center;
       font-weight: bold;
+      font-family: 'Segoe UI';
+      letter-spacing: 2px;
+      white-space: nowrap;
     }
 
     .label-text-s-hood {
-      background: red;
+      background: rgba(0, 136, 55, .95);
+      /* Semi-transparent green background */
+      opacity: .7;
       padding: 2px 5px;
       border-radius: 4px;
-      font-size: 12px;
+      font-size: 10px;
+      color: whitesmoke;
+      text-align: center;
+      font-family: 'Segoe UI';
+      letter-spacing: 1px;
+      white-space: nowrap;
     }
   </style>
 </head>
@@ -34,11 +46,18 @@
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([0, 0], 2); // Start zoomed out
+    const map = L.map('map').setView([47.645630, -122.334351], 13); // Start zoomed out
 
-    // Add a basemap
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
+    // Add a basemap - open street map
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    //   maxZoom: 19,
+    // }).addTo(map);
+
+    // Add a basemap - light grey
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 19
     }).addTo(map);
 
     // Filter function for each layer
@@ -47,7 +66,7 @@
     };
 
     const filterByDistance_s_hood = (feature) => {
-      return feature.properties.distance == 50 && feature.properties.line_index == 0; // Customize filter here
+      return feature.properties.distance == 30 && feature.properties.line_index == 0; // Customize filter here
     };
 
     // Helper to get center of a feature's bounds
@@ -56,76 +75,64 @@
       return bounds.getCenter();
     };
 
-    // Load and style Layer 1
+    // Load and style Layer 1: fat magenta lines for the large neighborhoods
     fetch('/media/seattle_nhoods/l_hood.geojson')
       .then(res => res.json())
       .then(data => {
         const layer1 = L.geoJSON(data, {
           filter: filterByDistance_l_hood,
-          style: { color: 'blue', weight: 3 },
-          onEachFeature: (feature, layer) => {
-            const center = getFeatureCenter(layer);
-            if (feature.properties.l_hood) {
-              L.marker(center, {
-                icon: L.divIcon({
-                  className: 'label-text-l-hood',
-                  html: feature.properties.l_hood,
-                  iconSize: null
-                })
-              }).addTo(map);
-            }
-          }
+          style: { color: '#d01c8b', weight: 8 }
         }).addTo(map);
-
-
-        // Add label in center of layer group
-        const center = getFeatureCenter(layer1);
-        if (data.features.length > 0) {
-          L.marker(center, {
-            icon: L.divIcon({
-              className: 'label-text',
-              html: data.features[0].properties.l_hood,
-              iconSize: null
-            })
-          }).addTo(map);
-        }
       });
-
-    // Load and style Layer 2
-    fetch('/media/seattle_nhoods/s_hood.geojson')
+    
+    // Load and style Layer 1: thin white lines on top of the magenta lines
+    // for the large neighborhoods
+    fetch('/media/seattle_nhoods/l_hood.geojson')
       .then(res => res.json())
       .then(data => {
         const layer2 = L.geoJSON(data, {
-          filter: filterByDistance_s_hood,
-          style: { color: 'red', weight: 3 },
-          onEachFeature: (feature, layer) => {
-            const center = getFeatureCenter(layer);
-            if (feature.properties.s_hood) {
-              L.marker(center, {
-                icon: L.divIcon({
-                  className: 'label-text-s-hood ',
-                  html: feature.properties.s_hood,
-                  iconSize: null
-                })
-              }).addTo(map);
-            }
-          }
+          filter: filterByDistance_l_hood,
+          style: { color: 'white', weight: 1 }
         }).addTo(map);
-
-        const center = getFeatureCenter(layer2);
-        if (data.features.length > 0) {
-          L.marker(center, {
-            icon: L.divIcon({
-              className: 'label-text',
-              html: data.features[0].properties.s_hood,
-              iconSize: null
-            })
-          }).addTo(map);
-        }
       });
 
+
+    // Load and style Layer 2: green lines for the small neighborhoods
+    fetch('/media/seattle_nhoods/s_hood.geojson')
+      .then(res => res.json())
+      .then(data => {
+        const layer3 = L.geoJSON(data, {
+          filter: filterByDistance_s_hood,
+          style: { color: "#008837", weight: 2.0 }
+        }).addTo(map);
+      });
+
+    fetch('/media/seattle_nhoods/labels.geojson')
+      .then(res => res.json())
+      .then(data => {
+        L.geoJSON(data, {
+          pointToLayer: (feature, latlng) => {
+            let className = 'label-text-l-hood'; // default
+
+            if (feature.properties.type === 's_hood') {
+              className = 'label-text-s-hood';
+            }
+
+            return L.marker(latlng, {
+              icon: L.divIcon({
+                className: className,
+                html: feature.properties.label,
+                iconSize: null,
+                iconAnchor: [feature.properties.h_length * 2, 0] // estimate size
+              })
+            });
+          }
+        }).addTo(map);
+      });
+
+
     // Show user's location
-    map.locate({ setView: true, maxZoom: 14 });
+    map.locate({ setView: true, maxZoom: 13 });
 
     function onLocationFound(e) {
       L.marker(e.latlng).addTo(map)
