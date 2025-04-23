@@ -2,12 +2,12 @@
 layout: post
 title: "Finding parent child word relationships"
 date: 2025-03-25
-categories: NumPy, tHe MaTrIx, data visualization
+categories: NumPy, tHe MaTrIx, data visualization, anagrams
 ---
 
 I just updated my [project](https://github.com/mike-babb/finding_anagrams) showing how [NumPy's](https://numpy.org/) arrays and other python objects can be used to [Extract, Transform, and Load (ETL)](https://en.wikipedia.org/wiki/Extract,_transform,_load) data into a SQLite database. Specifically, the identification of parent/child word relationships. A parent/child word relationship is one where some or all of the letters of a focal word can be used to spell another word: an anagram! 
 
-See this [page](/media/finding_anagrams/word_grid.html) for a graphic showing some of the parent/child word relationships.
+See this [page](/media/finding_anagrams/word_grid.html) for an interactive graphic showing some of the parent/child word relationships.
 
 V1.0 can be found [here](https://mike-babb.github.io/blog/2022/02/24/finding-anagrams).
 
