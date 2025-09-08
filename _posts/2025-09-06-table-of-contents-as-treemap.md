@@ -7,7 +7,7 @@ categories: Treemap, writing, Python, R, data visualization
 
 Let's create a [treemap](https://www.cs.umd.edu/hcil/treemap/) from a Microsoft Word document! While writing my dissertation, I wondered if I could visualize the progress I was making. I wanted something more than page counts. Effectively, I wanted a way to show how my manuscript grew and changed the more I wrote and edited. It turns out I was able to do that using a combination of python and R!
 
-<img src="../docs/images/treemap_tech_doc/chapter_data_2025_09_06_22_56_40.png" alt="final dissertation treemap" width="2000" height="1000"/>
+<img src="/docs/images/treemap_tech_doc/chapter_data_2025_09_06_22_56_40.png" alt="final dissertation treemap" width="2000" height="1000"/>
 
 
 # Background
