@@ -5,7 +5,7 @@ date: 2025-04-09
 categories: Leaflet, web map, local data, socio-spatial boundaries
 ---
 
-For quite some time I've wanted a web map those shows the [boundaries of Seattle's neighborhoods](https://mike-babb.github.io/media/seattle_nhoods/neighborhood_map.html)
+For quite some time I've wanted a web map that shows the [boundaries of Seattle's neighborhoods](https://mike-babb.github.io/media/seattle_nhoods/neighborhood_map.html)
 
 Over the course of my journeys through Seattle, I am sometimes curious about a neighborhood's boundaries. Or even the name of a neighborhood. While I know the general boundaries of most neighborhoods (`Ballard`, `Fremont`, `Downtown`, and `Pioneer Square`, for example), what are the *exact* neighborhood boundaries? Is my mental-map correct? Often, we know what area we're in when navigating socially produced space, but those borders and boundaries between spaces can be fuzzy. In the map linked to above, the large neighborhoods outlined in magenta contain the smaller neighborhoods outlined in green. For the most part, the smaller neighborhoods conform to my mental map of the "neighborhood boundaries". Some boundaries are different than what I thought. For example, I thought the southern boundary of the `Greenwood` neighborhood was further north: N 85TH ST as opposed to N 75TH ST. And what I think of as `Capitol Hill` is actually a neighborhood called `Stevens` and `Capitol Hill` is a district. While there is no `Central District`, there is a `Central Area`. And I tend to think of `West Seattle` as one big neighborhood and not a collection of neighborhoods. An example of the trade-off between time-in-space and the distance decay of geographic knowledge.
 
