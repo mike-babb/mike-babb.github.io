@@ -3,6 +3,7 @@ layout: post
 title: "Word relationships: Found even faster"
 date: 2025-05-19
 categories: NumPy, tHe MaTrIx, data visualization, anagrams
+usemathjax: true
 ---
 
 I implemented a few new techniques to see if I could decrease the processing time in my finding word relationships project. See the [README.md](https://github.com/mike-babb/finding_anagrams?tab=readme-ov-file#update-may-10-2025) for more information and few new plots. The four techniques I tried were:
