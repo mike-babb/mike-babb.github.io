@@ -6,8 +6,8 @@ categories: geospatial analysis, street network, GeoPandas, NetworkX, webmap
 ---
 
 I [finished](https://github.com/mike-babb/seattle_streets) my project on identifying and visualizing Seattle's discontinuous street network!  
-[SEE THIS PAGE FOR AN INTERACTIVE MAP OF V2 OF THE ADDED STREETS](/media/discontinuous_streets_v2.html)  
-[SEE THIS PAGE FOR AN INTERACTIVE MAP OF V1 OF THE ADDED STREETS](/media/discontinuous_streets.html)  
+[SEE THIS PAGE FOR AN INTERACTIVE MAP OF V2 OF THE ADDED STREETS](/media/discontinuous_streets/discontinuous_streets_v2.html)  
+[SEE THIS PAGE FOR AN INTERACTIVE MAP OF V1 OF THE ADDED STREETS](/media/discontinuous_streets/discontinuous_streets.html)  
 
 See this [page](https://mike-babb.github.io/blog/2025/01/01/seattles-discontinuous-streets) for information on version 1.0.
 
@@ -17,7 +17,7 @@ The major change in version 2.0 is that I added the connections between city sec
 In the image above, the blue lines are the cross-sector connections and the red lines are the within-sector connections. The connections across the various salt and fresh water bodies really stand out and emphasize the quasi-grid structure as seen in Seattle's streets. That being said, Galer is probably a little hard to see in that image, so here it is by itself.  
 <img src="https://raw.githubusercontent.com/mike-babb/seattle_streets/main/graphics/ex_11_galer_v2.png" alt="overall" width="500" height="136"/>  
 
-Version 2.0 of this project also features outlines of the various city sectors. The city sectors were created based on the street direction prefix and suffix.When hovering on a segment, all other segments are made transparent and the city sectors can be seen.
+Version 2.0 of this project also features outlines of the various city sectors. The city sectors were created based on the street direction prefix and suffix. When hovering on a segment, all other segments are made transparent and the city sectors can be seen.
 
 The minor bump to version 2.1 features modest tweaks to the control flow and a great deal of added documentation. The project's [README.md](https://github.com/mike-babb/seattle_streets/blob/main/README.md) describes the process and the output in great detail. There are also histograms of the different types of added segments. I'll include some highlights about the added within-sector segments (red) and cross-sector (blue) segments below:
 

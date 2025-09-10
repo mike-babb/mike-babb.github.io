@@ -15,7 +15,7 @@ Clearly, it took a while to type that up. But! That's not why I'm writing this p
 
 The plugin is called [jekyll-last-modified-at](https://github.com/gjtorikian/jekyll-last-modified-at). And this [page](https://tomkadwill.com/adding-last-modified-date-to-jekyll) features a little more information on how to implement the plugin. Both pages feature instructions and once I understood a little bit more about how to build a webpage using jekyll, the instructions make a lot of sense. I'm approaching web development as a complete novice. So, here is what I did:
 
-## Install the pluggin
+## Install the plugin
 Follow the instructions at [https://github.com/gjtorikian/jekyll-last-modified-at](https://github.com/gjtorikian/jekyll-last-modified-at).
 
 ## Update the post.html template

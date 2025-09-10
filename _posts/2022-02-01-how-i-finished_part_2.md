@@ -32,15 +32,15 @@ Sometimes, my anxious, unfocused energy means that I am working for many hours b
 
 Small bursts of work, small breaks. It adds up!
 
-One pomodoro is a period of work puncuated by a small break, repeated four times. After the fourth round of work, one takes a longer break. 
+One pomodoro is a period of work punctuated by a small break, repeated four times. After the fourth round of work, one takes a longer break. 
 
 This technique was especially helpful on the days I had trouble starting or I just didn't want to work. The typical recommendation is working for 25 minutes followed by a 5-10 minute break. In truth, working for 25 minutes (when I was tired or anxious or bored) before a break did not seem feasible. So, I dialed my work-period back to 12 minutes with a 3 minute break. At the end of the fourth round of work, I would take a 15 minute break.
 
 I got so much work done because of this technique. And that was on some days where I didn't want to work at all! The first round was the toughest, but it always got me going. I can always work for 12 minutes. 12 MINUTES! That's such a short period of time. I can do anything for 12 minutes. And I did!
 
-And the breaks were incredibly helpful. I would stop working and do something else for a few minutes. Get a drink of water, fold a few clothes, tidy my desk, make my bed. It was great! I wrote pages of text and I organized my place. The breaks allowed me to channel my fidgity energy into something productive. 
+And the breaks were incredibly helpful. I would stop working and do something else for a few minutes. Get a drink of water, fold a few clothes, tidy my desk, make my bed. It was great! I wrote pages of text and I organized my place. The breaks allowed me to channel my fidgety energy into something productive. 
 
-And somedays, especially after a rough start, it became a bit of a game. How much work could I get done in 12 minutes? Could I put down a paragraph of coherent text in 12 minutes? Could I write a function that returns what I need? That was kind of cool. 
+And some days, especially after a rough start, it became a bit of a game. How much work could I get done in 12 minutes? Could I put down a paragraph of coherent text in 12 minutes? Could I write a function that returns what I need? That was kind of cool. 
 
 Most days, after a few pomodoros I found a groove, turned off the pomodoros, and kept working. Some days, the pomodoros helped me chanel my energy. Some days I was too scattered to focus and the 12-minute bursts helped me get it done. 
 
@@ -58,7 +58,7 @@ Get a side project! I started working on an [anagram finder using python](https:
 
 ## Project Management
 ### _Wearing many hats._
-About half way through my dissertation I realized that I was doing the job of four people: project manager (PM), data engineer (DE), data analyst (DA), and communications specialist (CS). That's a lot. Some of these things I did better than othes. The one that I didn't know was the most important was the project manager position. I did not give that an ounce of thought. But I quickly realized that developing that skill helped me finish. I realized that PM Mike would have to coordinate the other Mikes in order to finish this. DE Mike and DA Mike, left to their own devices, will churn, create a lot of data, but won't get anything done. CS Mike had the most important role - interpreting and communicating the results to PM Mike and to my dissertation committee. PM Mike set the tempo, the research agenda, and could course correct when needed. One way I did that was borrowing pieces of an agile developmenmt framework. I set sprints and goals and I did daily standups. The daily scrum proved to be the most beneficial. Every day I would ask and answer the following questions:
+About half way through my dissertation I realized that I was doing the job of four people: project manager (PM), data engineer (DE), data analyst (DA), and communications specialist (CS). That's a lot. Some of these things I did better than others. The one that I didn't know was the most important was the project manager position. I did not give that an ounce of thought. But I quickly realized that developing that skill helped me finish. I realized that PM Mike would have to coordinate the other Mikes in order to finish this. DE Mike and DA Mike, left to their own devices, will churn, create a lot of data, but won't get anything done. CS Mike had the most important role - interpreting and communicating the results to PM Mike and to my dissertation committee. PM Mike set the tempo, the research agenda, and could course correct when needed. One way I did that was borrowing pieces of an agile development framework. I set sprints and goals and I did daily standups. The daily scrum proved to be the most beneficial. Every day I would ask and answer the following questions:
 - What did I work on yesterday?
 - What am I working on today?
 - What's blocking me?

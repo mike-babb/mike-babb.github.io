@@ -7,8 +7,7 @@ usemathjax: true
 ---
 
 # Wordle: so hot right now
-Like most people, I am captivated by wordle. It's a fun exercise. Especially on a bus.
-Because it's simple enough and working with a finite set of data, I wanted to programmatically explore the data space. So, two things came to mind:
+Like most people, I am captivated by [Wordle](https://www.nytimes.com/games/wordle/index.html). It's a fun exercise. Especially on a bus. Because it's simple enough and working with a finite set of data, I wanted to programmatically explore the data space. So, two things came to mind:
 - Is there a way to rank words in order to suggest the best starting word?
 - Can I build a simple solver that suggests words given letters known to be in the word, the position, and letters not in the word?
 
@@ -17,7 +16,7 @@ Because it's simple enough and working with a finite set of data, I wanted to pr
 # V1.0
 I use python, pandas, and NumPy to determine the top starting word and the solver. I make use of all five-letter words as found in the list of words in my [finding anagrams workshop.](https://github.com/mike-babb/finding_anagrams)
 
-V1.0 is feature complete. Both the top starting word and solver work correctly. To determine the top starting word, I counted the occurence of each letter across all five-letter words in my list of 9,972 words. Each letter is then assigned this score. The score of each word is the sum of each letter's score in the word. The higher the score, the better the word is to use as a starter. Using this metric, 'raise' is the best word to start with. In addition, this metric is the quickest way to remove possible words. 
+Version 1.0 is feature complete. Both the top starting word and solver work correctly. To determine the top starting word, I counted the occurrence of each letter across all five-letter words in my list of 9,972 words. Each letter is then assigned a score. The score of each word is the sum of each letter's score in the word. The higher the score, the better the word is to use as a starter. Using this metric, 'raise' is the best word to start with. In addition, this metric is the quickest way to remove possible words. 
 
 The five most common letters in five letter words are:
 <br>
@@ -25,7 +24,7 @@ The five most common letters in five letter words are:
 <br>
 Four vowels and one consonant. Makes sense...
 <br>
-![frequency of letter occurence](/assets/letter_score.png)
+![frequency of letter occurrence](/assets/wordle_fun/letter_score.png)
 
 The ten best starting words/word groups with five unique letters are:
 
