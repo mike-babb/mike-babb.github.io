@@ -12,9 +12,9 @@ See this [page](/media/finding_anagrams/word_grid.html) for an interactive graph
 
 Version 1.0 can be found [here](https://mike-babb.github.io/blog/2022/02/24/finding-anagrams).
 
-The difference between this version and version 1.0 is an expanded set of parent/child word determination techniques and more explicit delineation between techniques. There were four techniques in v1.0 and six techniques in v2.0. Each of the six techniques produce the same output: the identification and storage of approximately 73M parent-child word pairs. Initially, this project was motivated by my desire to learn more about [NumPy](https://numpy.org/). Over time it morphed into *how* quickly and efficiently I could identify the parent/child word pairs. Briefly, each of the six techniques involves subdivision of a $$[216K, 26]$$ matrix into $1$ or more sub-matrices of size $[M, 26]$.
+The difference between this version and version 1.0 is an expanded set of parent/child word determination techniques and more explicit delineation between techniques. There were four techniques in v1.0 and six techniques in v2.0. Each of the six techniques produce the same output: the identification and storage of approximately 73M parent-child word pairs. Initially, this project was motivated by my desire to learn more about [NumPy](https://numpy.org/). Over time it morphed into *how* quickly and efficiently I could identify the parent/child word pairs. Briefly, each of the six techniques involves subdivision of a $$[216K, 26]$$ matrix into $$1$$ or more sub-matrices of size $$[M, 26]$$.
 
-The six techniques are listed below along with a brief description and how long it takes to identify the parent/child word pairs. In general, the techniques progress from naive matrix sub-division to more efficient sub-division of the $[216K, 26]$ matrix.
+The six techniques are listed below along with a brief description and how long it takes to identify the parent/child word pairs. In general, the techniques progress from naive matrix sub-division to more efficient sub-division of the $$[216K, 26]$$ matrix.
 
 | Matrix Extraction Option | Subdivision Description | Total Time | Approx. Speed-Up | 
 | -----:|:-----|-----:|-----:|
