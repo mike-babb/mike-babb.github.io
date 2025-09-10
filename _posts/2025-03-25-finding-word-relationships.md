@@ -3,6 +3,7 @@ layout: post
 title: "Finding parent child word relationships"
 date: 2025-03-25
 categories: NumPy, tHe MaTrIx, data visualization, anagrams, word relationships
+usemathjax: true
 ---
 
 I just updated my [project](https://github.com/mike-babb/finding_anagrams) showing how [NumPy's](https://numpy.org/) arrays and other python objects can be used to [Extract, Transform, and Load (ETL)](https://en.wikipedia.org/wiki/Extract,_transform,_load) parent/child word-relationship data into a SQLite database, A parent/child word relationship is one where some or all of the letters of a focal word can be used to spell another word: an anagram! 
@@ -15,7 +16,7 @@ The difference between this version and version 1.0 is an expanded set of parent
 
 The six techniques are listed below along with a brief description and how long it takes to identify the parent/child word pairs. In general, the techniques progress from naive matrix sub-division to more efficient sub-division of the $[216K, 26]$ matrix.
 
-| Matrix Extraction Option | Subdivision Description | Total Time | Speed-Up | 
+| Matrix Extraction Option | Subdivision Description | Total Time | Approx. Speed-Up | 
 | -----:|:-----|-----:|-----:|
 | 1 | No subdivision  | 1 h 33 m 50 s | 1x |
 | 2 | Word length | 49 m 33 s | 2x |
