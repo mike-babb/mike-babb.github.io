@@ -71,14 +71,10 @@ The top 5 streets in the Northwest, North, and Northeast Sectors:
 
 <img src="/assets/seattle_streets/top_5_NW_N_NE.png" alt="Top 5: NW, N, NE" width="1000" height="543"/>
 
-<img src="../assets/treemap_tech_doc/demo_text.png" alt="lorem ipsum tree map" width="1000" height="500"/>
-
-
-
 The top 5 streets in the West, Center, and East Sectors:  
 
-<img src="../assets/seattle_streets/top_5_W_CNTR_E.png" alt="Top 5: W, CNTR, E" width="1000" height="464"/>
+<img src="/assets/seattle_streets/top_5_W_CNTR_E.png" alt="Top 5: W, CNTR, E" width="1000" height="464"/>
 
 The top 5 streets in the Southwest and South Sectors:  
 
-<img src="../assets/seattle_streets/top_5_SW_S.png" alt="Top 5: SW, S" width="1000" height="481"/>
+<img src="/assets/seattle_streets/top_5_SW_S.png" alt="Top 5: SW, S" width="1000" height="481"/>
