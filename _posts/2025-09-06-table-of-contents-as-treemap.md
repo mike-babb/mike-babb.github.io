@@ -7,7 +7,7 @@ categories: Treemap, writing, Python, R, data visualization
 
 Let's create a [treemap](https://www.cs.umd.edu/hcil/treemap/) from a Microsoft Word document! While writing my dissertation, I wondered if I could visualize the progress I was making. I wanted something more than page counts. Effectively, I wanted a way to show how my manuscript grew and changed the more I wrote and edited. It turns out I was able to do that using a combination of python and R!
 
-<img src="../assets/treemap_tech_doc/chapter_data_2025_09_06_22_56_40.png" alt="final dissertation treemap" width="1000" height="500"/>
+<img src="/assets/treemap_tech_doc/chapter_data_2025_09_06_22_56_40.png" alt="final dissertation treemap" width="1000" height="500"/>
 
 # Background
 I've created a [github repo](https://github.com/mike-babb/doc_to_tree_map) featuring code that uses the [python-docx](https://pypi.org/project/python-docx/) python library to extract character counts by document section from a [Microsoft Word Document](https://en.wikipedia.org/wiki/Microsoft_Word) and the [treemap](https://cran.r-project.org/package=treemap) R library to visualize the relative sizes of each section.
@@ -16,13 +16,13 @@ The genesis of this project was wanting to see progress. Writing is hard. It's t
 
 As an example of a treemap showing document change over time, here is a treemap from when I was about a year out from completing my dissertation:
 
-<img src="../assets/treemap_tech_doc/chapter_data_2020_07_07_13_03_29.png" alt="year out" width="1000" height="500"/>
+<img src="/assets/treemap_tech_doc/chapter_data_2020_07_07_13_03_29.png" alt="year out" width="1000" height="500"/>
 
 That is from July of 2020. Since then I've updated the visualization routine to better differentiate chapter headings.
 
 In the repo linked to above, I include functionality creating a Word document featuring *lorem ipsum* text generated using the [python-lorem](https://pypi.org/project/python-lorem/) package under manually created headings. The resulting treemap can be seen below:
 
-<img src="../assets/treemap_tech_doc/demo_text.png" alt="lorem ipsum tree map" width="1000" height="500"/>
+<img src="/assets/treemap_tech_doc/demo_text.png" alt="lorem ipsum tree map" width="1000" height="500"/>
 
 # Future work and conclusion
 I wrote my dissertation in Word. The as-submitted document was written in `LaTex`. The final Word document and the as-submitted `LaTex` document are more or less the same, barring some minor edits. I mention this because as of right now, creating a treemap from a document is only possible from a Word document. In the future, I could see a `LaTex` plugin/library that creates a treemap. (How cool would it be if a treemap is created every time the document is compiled?!) I could also see extending the functionality of the existing script to scan a `Markdown` document and build a treemap. 
