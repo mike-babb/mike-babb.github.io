@@ -67,11 +67,14 @@ In each of the eight sectors, there are more roads with existing road miles than
 |             W |    W TILDEN ST |            5             |             0.23 |          0.38 |          0.61 |             38.14% |          61.86% |                      1.62 |
 
 
-The top 5 streets in the Northwest, North, and Northeast Sectors:
+The top 5 streets in the Northwest, North, and Northeast Sectors:  
+
 <img src="../assets/seattle_streets/top_5_NW_N_NE.png" alt="Top 5: NW, N, NE" width="1000" height="543"/>
 
-The top 5 streets in the West, Center, and East Sectors:
+The top 5 streets in the West, Center, and East Sectors:  
+
 <img src="../assets/seattle_streets/top_5_W_CNTR_E.png" alt="Top 5: W, CNTR, E" width="1000" height="464"/>
 
-The top 5 streets in the Southwest and South Sectors:
+The top 5 streets in the Southwest and South Sectors:  
+
 <img src="../assets/seattle_streets/top_5_SW_S.png" alt="Top 5: SW, S" width="1000" height="481"/>
