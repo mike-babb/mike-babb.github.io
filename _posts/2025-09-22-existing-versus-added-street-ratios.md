@@ -6,7 +6,7 @@ categories: Seattle streets, data visualization, seaborn, matplot
 ---
 
 # Gaps in Seattle's street
-Earlier this year I set created a project [identifying gaps in Seattle's street network](https://github.com/mike-babb/seattle_streets). Briefly, I used a combination of NetworkX, GeoPandas, and other python libraries to find instances of [discontinuous streets](https://mike-babb.github.io/media/discontinuous_streets/discontinuous_streets_v2.html). Effectively, streets that run for a few blocks, terminate, and then resume. I found over 1.3K roads that exhibit this behavior within the City of Seattle. I produced a [number of statistics](https://mike-babb.github.io/blog/2025/02/24/seattles-discontinuous-streets-v2.1) about the existing and added streets, but one statistic that I was asked about several times was which streets featured more added length than existing length. Accordingly, I spent a little time identifying the streets with more added within-sector road miles than existing road miles for each of the city's eight sectors.
+Earlier this year I created a project [identifying gaps in Seattle's street network](https://github.com/mike-babb/seattle_streets). Briefly, I used a combination of NetworkX, GeoPandas, and other python libraries to find instances of [discontinuous streets](https://mike-babb.github.io/media/discontinuous_streets/discontinuous_streets_v2.html). Effectively, streets that run for a few blocks, terminate, and then resume. I found over 1.3K roads that exhibit this behavior within the City of Seattle. I produced a [number of statistics](https://mike-babb.github.io/blog/2025/02/24/seattles-discontinuous-streets-v2.1) about the existing and added streets, but one statistic that I was asked about several times was which streets featured more added length than existing length. Accordingly, I spent a little time identifying the streets with more added within-sector road miles than existing road miles for each of the city's eight sectors.
 
 Recall that Seattle is divided into eight sectors, based on compass directions. The eight sectors can be seen in the image below.  
 <img src="../assets/seattle_streets/seattle_sectors.png" alt="seattle sectors" width="500" height="588"/>  
@@ -71,7 +71,7 @@ The top 5 streets in the Northwest, North, and Northeast Sectors:
 <img src="../assets/seattle_streets/top_5_NW_N_NE.png" alt="Top 5: NW, N, NE" width="1000" height="543"/>
 
 The top 5 streets in the West, Center, and East Sectors:
-<img src="../assets/seattle_streets/top_5_W_CNTR_E.png" alt="Top 5: NW, N, NE" width="1000" height="464"/>
+<img src="../assets/seattle_streets/top_5_W_CNTR_E.png" alt="Top 5: W, CNTR, E" width="1000" height="464"/>
 
 The top 5 streets in the Southwest and South Sectors:
-<img src="../assets/seattle_streets/top_5_SW_S.png" alt="Top 5: NW, N, NE" width="1000" height="481"/>
+<img src="../assets/seattle_streets/top_5_SW_S.png" alt="Top 5: SW, S" width="1000" height="481"/>
