@@ -69,7 +69,7 @@ In each of the eight sectors, there are more roads with existing road miles than
 
 The top 5 streets in the Northwest, North, and Northeast Sectors:  
 
-<img src="../assets/seattle_streets/top_5_NW_N_NE.png" alt="Top 5: NW, N, NE" width="1000" height="543"/>
+<img src="/assets/seattle_streets/top_5_NW_N_NE.png" alt="Top 5: NW, N, NE" width="1000" height="543"/>
 
 <img src="../assets/treemap_tech_doc/demo_text.png" alt="lorem ipsum tree map" width="1000" height="500"/>
 
