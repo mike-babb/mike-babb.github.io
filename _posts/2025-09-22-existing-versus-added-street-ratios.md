@@ -10,7 +10,7 @@ Earlier this year I created a project [identifying gaps in Seattle's street netw
 
 Recall that Seattle is divided into eight sectors, based on compass directions. The eight sectors can be seen in the image below.  
 <img src="/assets/seattle_streets/seattle_sectors.png" alt="seattle sectors" width="500" height="588"/>  
-These sectors were created by grouping the directional prefix and suffix of the streets in the Seattle street network. From there, a concave hull was created to go from point cloud to polygon. See this page for code illustrating how I created the concave hull. In general, the sectors feature clear distinctions, except for the North, Center, and East Sectors. The Center sector is named for roads without a directional prefix. In the central business district, both streets and avenues are directionless. North of Denny way, streets are directionless while avenues are not. East of Broadway, streets feature a direction while avenues do not. As such, the Center sector overlaps with both the North and the East sector. I used these sectors to frame each step in this analysis. 
+These sectors were created by grouping the directional prefix and suffix of the streets in the Seattle street network. From there, a concave hull was created to go from point cloud to polygon. See this page for code illustrating how I created the concave hull. In general, the sectors feature clear distinctions, except for the North, Center, and East Sectors. The Center sector is named for roads without a directional prefix. In the central business district of Seattle, both streets and avenues are directionless. North of Denny way, streets are directionless while avenues are not. East of Broadway, streets feature a direction while avenues do not. As such, the Center sector overlaps with both the North and the East sector. I used these sectors to frame each subsequent step in this analysis. 
 
 # Ratio of existing road miles to added road miles.
 For each street in each sector, I computed the ratio of existing road miles to added road miles. The existing road miles are the actual roads and the added road miles the "gaps" between existing portions of roads. In this [map](https://mike-babb.github.io/media/discontinuous_streets/discontinuous_streets_v2.html), the existing roads are black and the missing "gaps" are red. A value of existing road miles to added road miles greater than 1.0 indicates that for a given street, there are more existing road miles than added road miles. Effectively, this means that the gaps between existing road segments are small. A value of existing road miles to added road miles less than 1.0 indicates that there are more added road miles than existing road miles. 
@@ -68,13 +68,13 @@ In each of the eight sectors, there are more roads with existing road miles than
 
 
 The top 5 streets in the Northwest, North, and Northeast Sectors:  
-
 <img src="/assets/seattle_streets/top_5_NW_N_NE.png" alt="Top 5: NW, N, NE" width="1000" height="543"/>
 
 The top 5 streets in the West, Center, and East Sectors:  
-
 <img src="/assets/seattle_streets/top_5_W_CNTR_E.png" alt="Top 5: W, CNTR, E" width="1000" height="464"/>
 
 The top 5 streets in the Southwest and South Sectors:  
+<img src="/assets/seattle_streets/top_5_SW_S.png" alt="Top 5: SW, S" width="1000" height="480"/>
 
-<img src="/assets/seattle_streets/top_5_SW_S.png" alt="Top 5: SW, S" width="1000" height="481"/>
+# Future work
+I'm wrapping up this examination of the ratio of added streets to existing streets. However, while I was working on this task, I wondered if there was a way to verify that the missing segments I created were not recreations of existing streets. It turns out I can! I'll save that for another post. 
