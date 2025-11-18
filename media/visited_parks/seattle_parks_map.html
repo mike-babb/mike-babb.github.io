@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Seattle Parks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+    .control-box {
+      position: absolute;
+      bottom: 30px;
+      left: 10px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-size: 14px;
+    }
+    .filter-panel {
+      margin-bottom: 10px;
+    }
+    .filter-panel select {
+      padding: 5px;
+      font-size: 14px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+    }
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Combined control box with filter above legend -->
+  <div class="control-box">
+    <div class="filter-panel">
+      <label for="filterSelect"><strong>Filter by Status:</strong></label><br>
+      <select id="filterSelect">
+        <option value="all">All Parks</option>
+        <option value="1. To visit">To Visit</option>
+        <option value="2. Needs picture">Needs Picture</option>
+        <option value="3. Visited">Visited</option>
+      </select>
+    </div>
+
+    <div class="legend" id="legend">
+      <strong>Park Status</strong><br>
+      <span>Total Parks: <span id="count-total">0</span></span>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #1a4bed;"></div>
+        <span>To Visit (<span id="count-to-visit">0</span>)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #cc2b28;"></div>
+        <span>Needs Picture (<span id="count-needs-picture">0</span>)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #38cf60;"></div>
+        <span>Visited (<span id="count-visited">0</span>)</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/media/visited_parks/visited_parks.geojson"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script>
+    const map = L.map('map').setView([47.6062, -122.3321], 12);
+
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    //   attribution: '© OpenStreetMap contributors'
+    // }).addTo(map);
+
+    // Add a basemap - light grey
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(map);
+
+    const categoryColors = {
+      "1. To visit": "#1a4bed",
+      "2. Needs picture": "#cc2b28",
+      "3. Visited": "#38cf60"
+    };
+
+    let geojsonLayer;
+
+    function renderParks(filterLabel = "all") {
+      if (geojsonLayer) {
+        map.removeLayer(geojsonLayer);
+      }
+
+      let counts = {
+        "1. To visit": 0,
+        "2. Needs picture": 0,
+        "3. Visited": 0,
+        total: 0
+      };
+
+      geojsonLayer = L.geoJSON(my_visited_parks, {
+        filter: function(feature) {
+          return filterLabel === "all" || feature.properties.label === filterLabel;
+        },
+        style: function(feature) {
+          const label = feature.properties.label;
+          counts.total++;
+          if (counts[label] !== undefined) {
+            counts[label]++;
+          }
+          return {
+            fillColor: categoryColors[label] || "#cccccc",
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.6
+          };
+        },
+        onEachFeature: function(feature, layer) {
+          const props = feature.properties;
+          layer.bindPopup(
+            `<b>${props.name}</b><br>` +
+            `Park ID: ${props.id}<br>` +
+            `Visit Date: ${props.date || "N/A"}<br>` +
+            `Status: ${props.label}`
+          );
+        }
+      }).addTo(map);
+
+      if (geojsonLayer.getBounds().isValid()) {
+        map.fitBounds(geojsonLayer.getBounds());
+      }
+
+      // Update legend counts
+      document.getElementById("count-total").textContent = counts.total;
+      document.getElementById("count-to-visit").textContent = counts["1. To visit"];
+      document.getElementById("count-needs-picture").textContent = counts["2. Needs picture"];
+      document.getElementById("count-visited").textContent = counts["3. Visited"];
+    }
+
+    // Initial render
+    renderParks();
+
+    // Filter toggle listener
+    document.getElementById("filterSelect").addEventListener("change", function(e) {
+      renderParks(e.target.value);
+    });
+
+    // Locate user
+    map.locate({ setView: false, maxZoom: 14 });
+
+    function onLocationFound(e) {
+      L.circleMarker(e.latlng, {
+        radius: 8,
+        fillColor: "#ff7800",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+      }).addTo(map).bindPopup("You are here!");
+    }
+
+    function onLocationError(e) {
+      alert(e.message);
+    }
+
+    map.on('locationfound', onLocationFound);
+    map.on('locationerror', onLocationError);
+  </script>
+</body>
+</html>
