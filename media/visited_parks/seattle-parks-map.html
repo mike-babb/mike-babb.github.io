@@ -46,12 +46,16 @@
       margin-right: 10px;
       border: 2px solid #333;
     }
+    .layer-toggle {
+      margin: 10px 0;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
   <div id="map"></div>
 
-  <!-- Combined control box with filter above legend -->
+  <!-- Combined control box with filter, toggle, and legend -->
   <div class="control-box">
     <div class="filter-panel">
       <label for="filterSelect"><strong>Filter by Status:</strong></label><br>
@@ -61,6 +65,13 @@
         <option value="2. Needs picture">Needs Picture</option>
         <option value="3. Visited">Visited</option>
       </select>
+    </div>
+
+    <div class="layer-toggle">
+      <label>
+        <input type="checkbox" id="clusterToggle" checked>
+        Show Park Clusters
+      </label>
     </div>
 
     <div class="legend" id="legend">
@@ -81,16 +92,13 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="visited_parks.geojson"></script>
+  <script type="text/javascript" src="visited_parks.json"></script>
+  <script type="text/javascript" src="park_clusters.json"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script>
     const map = L.map('map').setView([47.6062, -122.3321], 12);
 
-    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    //   attribution: '© OpenStreetMap contributors'
-    // }).addTo(map);
-
-    // Add a basemap - light grey
+    // Basemap - light grey
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
       subdomains: 'abcd',
@@ -156,6 +164,24 @@
       document.getElementById("count-needs-picture").textContent = counts["2. Needs picture"];
       document.getElementById("count-visited").textContent = counts["3. Visited"];
     }
+
+    // Add line layer for clusters
+    const lineLayer = L.geoJSON(park_clusters, {
+      style: {
+        color: "#000000",
+        weight: 2,
+        opacity: 1
+      }
+    }).addTo(map);
+
+    // Toggle listener for park_clusters
+    document.getElementById("clusterToggle").addEventListener("change", function(e) {
+      if (e.target.checked) {
+        map.addLayer(lineLayer);
+      } else {
+        map.removeLayer(lineLayer);
+      }
+    });
 
     // Initial render
     renderParks();
