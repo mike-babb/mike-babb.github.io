@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,12 @@
       height: 100vh;
       overflow: hidden;
     }
+
     #map {
       width: 100%;
       height: 100%;
     }
+
     .control-box {
       position: absolute;
       bottom: 30px;
@@ -23,22 +26,26 @@
       background: white;
       padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
       z-index: 1000;
       font-size: 14px;
     }
+
     .filter-panel {
       margin-bottom: 10px;
     }
+
     .filter-panel select {
       padding: 5px;
       font-size: 14px;
     }
+
     .legend-item {
       display: flex;
       align-items: center;
       margin: 5px 0;
     }
+
     .legend-color {
       width: 20px;
       height: 20px;
@@ -46,12 +53,14 @@
       margin-right: 10px;
       border: 2px solid #333;
     }
+
     .layer-toggle {
       margin: 10px 0;
       font-size: 14px;
     }
   </style>
 </head>
+
 <body>
   <div id="map"></div>
 
@@ -126,10 +135,10 @@
       };
 
       geojsonLayer = L.geoJSON(my_visited_parks, {
-        filter: function(feature) {
+        filter: function (feature) {
           return filterLabel === "all" || feature.properties.label === filterLabel;
         },
-        style: function(feature) {
+        style: function (feature) {
           const label = feature.properties.label;
           counts.total++;
           if (counts[label] !== undefined) {
@@ -143,7 +152,7 @@
             fillOpacity: 0.6
           };
         },
-        onEachFeature: function(feature, layer) {
+        onEachFeature: function (feature, layer) {
           const props = feature.properties;
           layer.bindPopup(
             `<b>${props.name}</b><br>` +
@@ -165,17 +174,31 @@
       document.getElementById("count-visited").textContent = counts["3. Visited"];
     }
 
-    // Add line layer for clusters
-    const lineLayer = L.geoJSON(park_clusters, {
-      style: {
-        color: "#000000",
-        weight: 2,
-        opacity: 1
-      }
-    }).addTo(map);
+    // Add line layer for clusters with dynamic colors
+const lineLayer = L.geoJSON(park_clusters, {
+  style: function(feature) {
+    return {
+      color: feature.properties.label_colors || "#111111", // fallback to black
+      weight: 4,
+      opacity: 1
+    };
+  },
+  onEachFeature: function(feature, layer) {
+    if (feature.properties && feature.properties.n_parks) {
+      layer.bindPopup(
+        `Sector: ${feature.properties.city_sector}<br>` +
+        `Cluster ${feature.properties.clabel}<br>` +
+        `Parks: ${feature.properties.n_parks}<br>` +
+        `To Visit: ${feature.properties.to_visit}`
+      );
+    }
+  }
+}).addTo(map);
+
+
 
     // Toggle listener for park_clusters
-    document.getElementById("clusterToggle").addEventListener("change", function(e) {
+    document.getElementById("clusterToggle").addEventListener("change", function (e) {
       if (e.target.checked) {
         map.addLayer(lineLayer);
       } else {
@@ -187,7 +210,7 @@
     renderParks();
 
     // Filter toggle listener
-    document.getElementById("filterSelect").addEventListener("change", function(e) {
+    document.getElementById("filterSelect").addEventListener("change", function (e) {
       renderParks(e.target.value);
     });
 
@@ -213,4 +236,5 @@
     map.on('locationerror', onLocationError);
   </script>
 </body>
+
 </html>
