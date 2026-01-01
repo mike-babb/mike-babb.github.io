@@ -215,7 +215,7 @@ const lineLayer = L.geoJSON(park_clusters, {
     });
 
     // Locate user
-    map.locate({ setView: false, maxZoom: 12 });
+    map.locate({ setView: true, maxZoom: 19 });
 
     function onLocationFound(e) {
       L.circleMarker(e.latlng, {
