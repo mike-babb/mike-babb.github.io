@@ -88,15 +88,15 @@
       <span>Total Parks: <span id="count-total">0</span></span>
       <div class="legend-item">
         <div class="legend-color" style="background-color: #1a4bed;"></div>
-        <span>To Visit (<span id="count-to-visit">0</span>)</span>
+        <span>To Visit (<span id="count-to-visit">0</span> &mdash; <span id="pct-to-visit">0%</span>)</span>
       </div>
       <div class="legend-item">
         <div class="legend-color" style="background-color: #cc2b28;"></div>
-        <span>Needs Picture (<span id="count-needs-picture">0</span>)</span>
+        <span>Needs Picture (<span id="count-needs-picture">0</span> &mdash; <span id="pct-needs-picture">0%</span>)</span>
       </div>
       <div class="legend-item">
         <div class="legend-color" style="background-color: #38cf60;"></div>
-        <span>Visited (<span id="count-visited">0</span>)</span>
+        <span>Visited (<span id="count-visited">0</span> &mdash; <span id="pct-visited">0%</span>)</span>
       </div>
     </div>
   </div>
@@ -167,11 +167,17 @@
         map.fitBounds(geojsonLayer.getBounds());
       }
 
-      // Update legend counts
-      document.getElementById("count-total").textContent = counts.total;
+      // Update legend counts and percentages
+      const total = counts.total;
+      const pct = (n) => total > 0 ? (n / total * 100).toFixed(1) + "%" : "0%";
+
+      document.getElementById("count-total").textContent = total;
       document.getElementById("count-to-visit").textContent = counts["1. To visit"];
       document.getElementById("count-needs-picture").textContent = counts["2. Needs picture"];
       document.getElementById("count-visited").textContent = counts["3. Visited"];
+      document.getElementById("pct-to-visit").textContent = pct(counts["1. To visit"]);
+      document.getElementById("pct-needs-picture").textContent = pct(counts["2. Needs picture"]);
+      document.getElementById("pct-visited").textContent = pct(counts["3. Visited"]);
     }
 
     // Add line layer for clusters with dynamic colors
