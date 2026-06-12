@@ -169,7 +169,7 @@
 
       // Update legend counts and percentages
       const total = counts.total;
-      const pct = (n) => total > 0 ? (n / total * 100).toFixed(1) + "%" : "0%";
+      const pct = (n) => total > 0 ? (n / total * 100).toFixed(0) + "%" : "0%";
 
       document.getElementById("count-total").textContent = total;
       document.getElementById("count-to-visit").textContent = counts["1. To visit"];
