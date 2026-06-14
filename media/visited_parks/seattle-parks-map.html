@@ -103,6 +103,7 @@
 
   <script type="text/javascript" src="visited_parks_smooth.json"></script>
   <script type="text/javascript" src="park_clusters.json"></script>
+  <script type="text/javascript" src="light_rail.geojson"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script>
     const map = L.map('map').setView([47.6062, -122.3321], 12);
@@ -113,6 +114,11 @@
       subdomains: 'abcd',
       maxZoom: 19
     }).addTo(map);
+
+    // Dedicated pane for light rail stations so they always sit above
+    // the park and cluster layers, even after the park layer is redrawn.
+    map.createPane('lightRailPane');
+    map.getPane('lightRailPane').style.zIndex = 650;
 
     const categoryColors = {
       "1. To visit": "#1a4bed",
@@ -211,6 +217,27 @@ const lineLayer = L.geoJSON(park_clusters, {
         map.removeLayer(lineLayer);
       }
     });
+
+    // Light rail stations - purple points, shown on top of all other layers
+    const lightRailLayer = L.geoJSON(light_rail, {
+      pane: 'lightRailPane',
+      pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, {
+          pane: 'lightRailPane',
+          radius: 9,
+          fillColor: "#800080",
+          color: "#800080",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.9
+        });
+      },
+      onEachFeature: function (feature, layer) {
+        const name = feature.properties.station
+          .replace(/\b\w/g, c => c.toUpperCase());
+        layer.bindPopup(`<b>${name}</b>`);
+      }
+    }).addTo(map);
 
     // Initial render
     renderParks();
