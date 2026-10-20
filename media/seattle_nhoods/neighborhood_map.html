@@ -77,7 +77,8 @@
     };
 
     // Load and style Layer 1: fat magenta lines for the large neighborhoods
-    fetch('/media/seattle_nhoods/l_hood.geojson')
+    // fetch('/media/seattle_nhoods/l_hood.geojson')
+    fetch('l_hood.geojson')
       .then(res => res.json())
       .then(data => {
         const layer1 = L.geoJSON(data, {
