@@ -60,7 +60,7 @@
             maxZoom: 19
         }).addTo(map);
 
-
+    
     // Filter function for each layer
     const filterByDistance_l_hood = (feature) => {
       return feature.properties.distance == 10 && feature.properties.line_index == 0; // Customize filter here
@@ -77,7 +77,7 @@
     };
 
     // Load and style Layer 1: fat magenta lines for the large neighborhoods
-    // fetch('/media/seattle_nhoods/l_hood.geojson')
+    // fetch('l_hood.geojson')
     fetch('l_hood.geojson')
       .then(res => res.json())
       .then(data => {
@@ -89,7 +89,7 @@
 
     // Load and style Layer 1: thin white lines on top of the magenta lines
     // for the large neighborhoods
-    fetch('/media/seattle_nhoods/l_hood.geojson')
+    fetch('l_hood.geojson')
       .then(res => res.json())
       .then(data => {
         const layer2 = L.geoJSON(data, {
@@ -100,7 +100,7 @@
 
 
     // Load and style Layer 2: green lines for the small neighborhoods
-    fetch('/media/seattle_nhoods/s_hood.geojson')
+    fetch('s_hood.geojson')
       .then(res => res.json())
       .then(data => {
         const layer3 = L.geoJSON(data, {
@@ -109,7 +109,7 @@
         }).addTo(map);
       });
 
-    fetch('/media/seattle_nhoods/labels.geojson')
+    fetch('labels.geojson')
       .then(res => res.json())
       .then(data => {
         L.geoJSON(data, {
